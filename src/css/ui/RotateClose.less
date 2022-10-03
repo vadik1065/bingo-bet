@@ -1,0 +1,40 @@
+@import "../vars.less";
+
+.absolute-close-modal-rotate {
+  min-width: 24px;
+  width: 24px;
+  height: 24px;
+  position: inherit;
+  background: var(--modal-close-circle) !important;
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  svg {
+    width: 12px;
+    height: 12px;
+    transition: 0.3s;
+  }
+  & > * {
+    fill: var(--modal-close-cross);
+  }
+  &:hover svg {
+    transform: rotate(90deg);
+    fill: var(--green);
+  }
+}
+
+@media @breakpoint-4k {
+  .absolute-close-modal-rotate {
+    min-width: 44px !important;
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .absolute-close-modal-rotate svg {
+    width: 21px;
+    height: 21px;
+  }
+}

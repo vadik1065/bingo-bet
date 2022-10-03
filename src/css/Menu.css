@@ -1,0 +1,652 @@
+.store-links {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 210px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-links a,
+.store-links .store-link {
+  width: 140px;
+  height: 40.44px;
+  cursor: pointer;
+  opacity: .5;
+}
+
+.store-links a {
+  margin-bottom: 10px;
+}
+
+.store-links a:hover,
+.store-links .store-link:hover {
+  opacity: 1;
+}
+
+.store-links svg {
+  width: 100%;
+  height: auto;
+}
+
+.favs-menu-container .more.auto {
+  text-transform: none;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+ion-menu {
+  width: 250px;
+  max-width: 250px;
+  min-width: 250px;
+  --background: var(--header-background);
+  background: var(--header-background) !important;
+}
+
+ion-menu::part(container) {
+  --height: calc(100% - 75px);
+  margin-top: 75px;
+  box-shadow: inset 20px 31px 36px -49px black;
+}
+
+ion-menu.md ion-content {
+  --padding-start: 8px;
+  --padding-end: 8px;
+  --padding-top: 20px;
+  --padding-bottom: 20px;
+}
+
+ion-menu.md ion-list {
+  padding: 20px 0;
+}
+
+ion-menu.md ion-note {
+  margin-bottom: 30px;
+}
+
+ion-menu.md ion-list-header, ion-menu.md ion-note {
+  padding-left: 10px;
+}
+
+ion-menu.md ion-list#inbox-list {
+  border-bottom: 1px solid var(--ion-color-step-150, #d7d8da);
+}
+
+ion-menu.md ion-list#inbox-list ion-list-header {
+  font-size: 22px;
+  font-weight: 600;
+  min-height: 20px;
+}
+
+ion-menu.md ion-list#labels-list ion-list-header {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #757575;
+  min-height: 26px;
+}
+
+ion-menu.md ion-item {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  border-radius: 8px;
+}
+
+ion-menu.md ion-item.selected {
+  --background: rgba(var(--ion-color-primary-rgb), 0.14);
+}
+
+ion-menu.md ion-item.selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-menu.md ion-item ion-icon {
+  color: #616e7e;
+}
+
+ion-menu.md ion-item ion-label {
+  font-weight: 500;
+}
+
+ion-menu.ios ion-content {
+  --padding-bottom: 20px;
+}
+
+ion-menu.ios ion-list {
+  padding: 20px 0 0 0;
+}
+
+ion-menu.ios ion-note {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+ion-menu.ios ion-item {
+  --padding-start: 16px;
+  --padding-end: 16px;
+  --min-height: 50px;
+}
+
+ion-menu.ios ion-item ion-icon {
+  font-size: 24px;
+  color: #73849a;
+}
+
+ion-menu.ios ion-item .selected ion-icon {
+  color: var(--ion-color-primary);
+}
+
+ion-menu.ios ion-list#labels-list ion-list-header {
+  margin-bottom: 8px;
+}
+
+ion-menu.ios ion-list-header, ion-menu.ios ion-note {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+ion-menu.ios ion-note {
+  margin-bottom: 8px;
+}
+
+ion-note {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--ion-color-medium-shade);
+}
+
+ion-item.selected {
+  --color: var(--ion-color-primary);
+}
+
+/* ion-menu::part(backdrop) {
+  display: none;
+} */
+
+.menu-link svg {
+  transition: .3s;
+  margin-left: 32px;
+  margin-right: 14px;
+  fill: var(--menu-font);
+}
+
+.menu-link svg.question {
+  width: 19px;
+  height: 19px;
+}
+
+.menu-link svg.menu-link-icon,
+.menu-link svg.live-chat-icon {
+  width: 20px;
+  height: 20px;
+  stroke: var(--tag-img-fill);
+}
+
+.menu-link img {
+  width: 20px;
+  height: auto;
+  margin-left: 32px;
+  margin-right: 14px;
+}
+
+.menu-link {
+  transition: .3s;
+  border-left: 2.25px solid transparent;
+  cursor: pointer;
+  align-items: center;
+}
+
+.menu-link p, .menu-link a {
+  transition: .3s;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--menu-font);
+}
+
+.menu-link a {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.menu-link ion-badge {
+  margin-left: 8px;
+  --background: var(--red);
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.url-selected {
+  border-left: 2.25px solid var(--green);
+}
+
+.url-selected p {
+  color: var(--green);
+}
+
+.url-selected svg {
+  fill: var(--green);
+}
+
+.menu-link:not(.live-chat-link):hover {
+  border-left: 2.25px solid var(--green);
+}
+
+.menu-link:hover p, .menu-link:hover a {
+  color: var(--green);
+}
+
+.menu-link:hover svg {
+  fill: var(--green);
+}
+
+ion-menu::part(container) {
+  width: 250px;
+}
+
+ion-searchbar.search-game-field {
+  width: 211.59px;
+  margin: 0 auto;
+  height: 38px;
+  margin-top: 20px;
+  margin-bottom: 37px;
+  padding: 0px;
+  border-radius: 8px;
+  --box-shadow: none;
+  --border-radius: 8px;
+  --background: var(--menu-search-bg);
+}
+
+.search-game-container {
+  position: relative;
+  margin: 30px auto;
+  /* margin-bottom: -20px; */
+}
+
+.search-game-container ion-searchbar.search-game-field {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.search-game-popover {
+  position: absolute;
+  background: var(--header-background);
+  top: 38px;
+  left: 20px;
+  height: auto;
+  max-height: 700px;
+  overflow-y: scroll;
+  margin: 0 auto;
+  width: 208.59px;
+  z-index: 10;
+  /* border: 1px solid var(--green); */
+  box-shadow: var(--header-box-shadow)
+}
+
+.search-game-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.search-game-link p {
+  transition: .3s;
+  margin: 0px;
+  color: var(--font-default);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 10px;
+  max-width: 70%
+}
+
+.search-game-link:hover p {
+  transition: .3s;
+  color: var(--green);
+}
+
+.search-game-link .game-image {
+  width: 50px;
+  border-radius: 3px;
+  min-width: 50px;
+  height: 30px;
+  background-size: contain;
+  background-position: center;
+}
+
+#menu-list {
+  height: 100%;
+  padding-bottom: 20px;
+  overflow: auto;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid var(--menu-hr);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.horizontal-line.mt-0 {
+  margin-top: 0;
+}
+
+.horizontal-line.mb-0 {
+  margin-bottom: 0;
+}
+
+/* width */
+
+.search-game-popover::-webkit-scrollbar, #menu-list::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+
+.search-game-popover::-webkit-scrollbar-track, #menu-list {
+  background: transparent;
+  margin-right: -1px;
+}
+
+/* Handle */
+
+.search-game-popover::-webkit-scrollbar-thumb, #menu-list::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+
+.search-game-popover::-webkit-scrollbar-thumb:hover, #menu-list::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
+.more {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 17px;
+  color: var(--menu-font)
+}
+
+.more-container svg {
+  fill: var(--menu-font);
+  margin-left: 35px;
+  margin-top: -3px;
+  margin-right: 9px;
+  width: 13px;
+  height: 13px;
+}
+
+.more-container {
+  opacity: .7;
+  /* margin-top: 16px; */
+  /* margin-bottom: 16px; */
+  align-items: center;
+}
+
+.more-container .more {
+  margin: 16px 0;
+}
+
+.menu-fav-preview {
+  border-radius: 3px;
+  width: 42.88px;
+  height: 33px;
+  margin-left: 35px;
+}
+
+.menu-fav {
+  margin-bottom: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.menu-fav p {
+  transition: .3s;
+  margin: 0px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 14px;
+  line-height: 19px;
+  color: var(--font-default);
+  max-width: 125px;
+}
+
+.menu-fav:hover p {
+  color: var(--green)
+}
+
+.favs-menu-container {
+  margin-top: 20px;
+}
+
+.auto {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-game-container ion-searchbar.search-game-field.focused {
+  box-shadow: 0 0 0 2px var(--green);
+  -webkit-appearance: none;
+}
+
+.search-game-field.focused ion-icon {
+  color: var(--green)
+}
+
+.menu-top {
+  width: 211.59px;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-top .unlogged-lang {
+  margin: 10px auto 0;
+  /* justify-self: flex-end; */
+}
+
+.only-mob-menu .promo-button {
+  /* width: 211.59px; */
+  width: 100%;
+  margin-top: 13px;
+}
+
+.only-mob-menu .unlogged, .only-mob-menu .logged {
+  width: 211.59px;
+  margin: 0 auto;
+  margin-top: 10px;
+  flex-direction: column;
+}
+
+.only-mob-menu .unlogged > div {
+  min-width: 100%;
+  margin: 4px auto;
+}
+
+.bingo-coin-div {
+  width: 211.59px;
+  height: 40px;
+  margin: 20px auto 0;
+  justify-content: center;
+  align-items: center;
+  background: var(--green);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.bingo-coin-div:hover {
+  background: var(--green-btn-hover);
+}
+
+.bingo-coin-div.mob {
+  min-width: 99%;
+  width: 99%;
+  margin: 10px 0;
+}
+
+.bingo-coin-div img {
+  width: 18px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.bingo-coin-div p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.balance-div .dropdown-img {
+  width: 11px;
+  height: auto;
+  margin-left: auto;
+  margin-right: 19px;
+  opacity: var(--dpopdown-img-opacity);
+}
+
+.only-mob-menu .balance-div {
+  min-width: 99%;
+  margin-right: 0;
+}
+
+.balance-div.bonus {
+  cursor: pointer;
+}
+
+.only-mob-menu .balance-div.bonus {
+  margin-bottom: 5px;
+}
+
+.only-mob-menu ion-item.header-balance {
+  width: 100%;
+  margin-right: 0;
+  --padding-end: 0;
+}
+
+.only-mob-menu ion-item.header-balance img {
+  left: 5px;
+}
+
+.only-mob-menu .balance-select {
+  padding-left: 38px !important;
+}
+
+.only-mob-menu .to-balance {
+  min-width: 99%;
+  background: var(--green);
+  border-radius: 8px;
+  height: 40px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.only-mob-menu .to-balance:hover {
+  background: var(--green-btn-hover);
+}
+
+.only-mob-menu .to-balance p {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 1px;
+}
+
+.only-mob-menu .popover-content p {
+  display: flex;
+  align-items: center;
+  color: var(--menu-font)
+}
+
+.only-mob-menu .popover-content a {
+  color: var(--menu-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.only-mob-menu .popover-content svg {
+  fill: var(--menu-font);
+  width: 24px;
+  margin-right: 10px;
+}
+
+.only-mob-menu .user-btn {
+  padding: 0;
+  min-width: 99%;
+  justify-content: flex-start;
+  background: none;
+  margin-bottom: 8px;
+}
+
+.only-mob-menu .popover-content {
+  width: 90%;
+  transition: .3s;
+  height: 0px;
+  overflow: hidden
+}
+
+.only-mob-menu .header-username {
+  max-width: 115px
+}
+
+.only-mob-menu .user-btn svg {
+  margin-left: auto
+}
+
+.showthis .popover-content {
+  height: 285px;
+}
+
+.only-mob-menu .dropdown-img {
+  transition: .3s;
+}
+
+.showthis .dropdown-img {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 1399px) {
+  ion-menu {
+    width: inherit;
+    max-width: inherit;
+    /* min-width: inherit; */
+    background: transparent !important;
+  }
+}
+
+@media screen and (max-width: 1599px) and (min-width: 768px) {
+  .only-mob-menu .user-btn,
+  .only-mob-menu .menu-top .unlogged-lang,
+  .only-mob-menu .unlogged {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .only-mob-menu .promo-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .only-mob-menu ion-item.header-balance,
+  .only-mob-menu .to-balance,
+  .only-mob-menu .balance-div.bonus.second {
+    display: none;
+  }
+}

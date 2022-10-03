@@ -1,0 +1,1242 @@
+@media screen and (max-width: 767px) {
+  /* Header */
+  .header-container {
+    width: 100%;
+    height: 50px;
+  }
+  .header-container .balance-block,
+  .header-container .login-btn,
+  .header-container .logged,
+  .header-container .unlogged {
+    display: none;
+  }
+
+  .menu-btn-container {
+    width: 55px;
+    height: 100%;
+    margin-left: 0px;
+  }
+
+  .logo-link{
+    margin: 0 auto;
+    background: url(../images/logo-link-header.png);
+    height: 30px;
+    width: 110px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  ion-toggle.daymode-toggle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Menu */
+  ion-menu::part(container) {
+    --height: calc(100% - 50px);
+    margin-top: 50px;
+  }
+
+  /* Footer */
+  .footer-container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+    background-color: var(--footer);
+    margin-top: 25px;
+  }
+
+  .footer-container-top {
+    height: 35px;
+  }
+
+  .footer-container-top img {
+    width: 75px;
+    height: auto;
+    padding: 5px 10px;
+  }
+
+  .footer-container-body {
+    padding: 20px 0 0;
+  }
+
+  .footer-container-body-top {
+    margin-bottom: 30px;
+  }
+
+  .footer-container-body-top > img {
+    display: none;
+  }
+
+  .footer-container-socials {
+    margin: 0 auto;
+  }
+
+  .footer-container-socials a:first-child {
+    margin-left: 0;
+  }
+  .footer-container-socials a svg {
+    fill: var(--green) !important;
+  }
+
+  .footer-container-links {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer-container-links div {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .footer-container-links div:nth-child(odd) {
+    width: 45%;
+    margin-left: 0;
+    margin-right: 5%;
+  }
+
+  .footer-container-links div:nth-child(even) {
+    width: 50%;
+  }
+
+  .footer-container-links div a {
+    margin-top: 0;
+    font-size: 12px;
+    line-height: 30px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .footer-container-links div a.help {
+    margin-top: 0;
+  }
+
+  .footer-container-body-bottom {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .footer-text-content {
+    font-size: 10px;
+    line-height: 16px;
+    padding: 20px 0;
+  }
+
+  .footer-logos-bottom {
+    justify-content: space-between;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .footer-logos-bottom > div {
+    width: auto;
+    padding: 0;
+  }
+
+  .footer-logos-bottom .logos-bottom-left {
+    display: flex;
+    width: 30%;
+  }
+
+  .footer-logos-bottom .eighteen {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    /* margin-right: 15px; */
+  }
+
+  .footer-logos-bottom .im-casino {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+  }
+  .logo-bottom-right a {
+    display: flex !important;
+  }
+  .footer-logos-bottom .logos-bottom-center {
+    width: auto
+  }
+
+  .footer-logos-bottom .ridotto {
+    width: 70px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .footer-logos-bottom .logo-bottom-right {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 0;
+  }
+  .footer-logos-bottom .logo-bottom-right > * {
+    flex: 1 1 33%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .logo-bottom-right a:first-child {
+    /* margin-right: 15px; */
+  }
+
+  .footer-logos-bottom .to-gov {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    margin: 0
+  }
+  .footer-valid > div {
+    margin: 0 auto;
+  }
+  .footer-valid * {
+    height: 60px !important;
+  }
+  .footer-logos-bottom .to-kkk {
+    width: 100%;
+    height: 100%;
+    margin:0;
+      background-position: center;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+    padding: 15px 0;
+  }
+
+  /* Homepage */
+  .width-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .homepage-title {
+    display: none;
+  }
+
+  .carousel-root {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .promoted {
+    /* width: 91%; */
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+
+  .promoted-card {
+    margin-bottom: 25px;
+  }
+
+  .promoted-card:first-child {
+    margin-right: 0;
+  }
+
+  .pr-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn-cnt {
+    height: calc(100% - 50px);
+  }
+
+  .pr-info {
+    height: 45px;
+  }
+
+  .recommended-block {
+    /* width: 91%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+  }
+
+  .page-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .recommended-block .arrows {
+    display: none;
+  }
+
+  .rec-games-block {
+    overflow: scroll;
+  }
+
+  .rec-card {
+    flex: 0 0 140px;
+    margin-right: 10px;
+  }
+
+  .rec-card img {
+    width: 100%;
+    /* margin-top: 10px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 155px;
+    border-radius: 3px;
+  }
+
+  .rec-card p {
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .rec-card span {
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 14px;
+  }
+  .rec-card > p, .rec-card span {
+    padding: 0 8px;
+  }
+  .rec-card .playnow-btn {
+    width: 100%;
+    height: 46.5px;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    border-radius: 4px;
+  }
+  .rec-card:hover .playnow-btn {
+    border-radius: 0 0 4px 4px;
+  }
+  .playnow-btn p {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .jackpot-btn-container {
+    width: 75px;
+    height: 20px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 42px;
+    right: calc(50% - 38px);
+  }
+
+  .jackpot-btn-container p {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .games-block .title-w-filter {
+    display: block;
+  }
+
+  .filter-segment {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 767px;
+  }
+  .filter-segment ion-segment-button {
+    height: 47px;
+    --width: 50px;
+  }
+
+  .games-container {
+    display: grid;
+    /* grid-template-columns: repeat(2, minmax(138px, 1fr)); */
+    grid-template-columns: repeat(auto-fill, minmax(137px, 1fr));
+    grid-gap: 15px !important;
+  }
+
+  .game-preview {
+    width: 100%;
+    height: 100px;
+    /* height: auto; */
+    /* min-height: 100px; */
+    /* height: fit-content; */
+    /* max-height: max-content; */
+    /* object-fit: cover; */
+    /* max-height: 180px; */
+    /* overflow: hidden; */
+    margin-bottom: auto;
+  }
+
+  .game-card .game-info {
+    height: 48px;
+    position: relative;
+    padding-left: 7px;
+    padding-right: 7px;
+    justify-content: center;
+  }
+
+  .game-card .game-info p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0;
+    max-width: 100%;
+    margin-bottom: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .game-card .game-info span {
+    font-size: 10px;
+    line-height: 12px;
+    max-width: 70%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .game-card .provider-logo {
+    width: 40px;
+    height: auto;
+    right: 3px;
+    bottom: 3px;
+  }
+
+  .fav-block {
+    background: var(--fav-bg);
+    width: 20px;
+    height: 20px;
+  }
+
+  .fav {
+    width: 10px;
+    height: 9px;
+  }
+
+  .btn-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100% - 48px);
+  }
+
+  .play, .demo {
+    max-width: 66%;
+  }
+
+  /* Games */
+  .games-page-container .title-w-filter {
+    display: block;
+  }
+
+  .games-page-container .page-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .games-page-container ion-segment {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .slots-filter-container {
+    /* overflow-x: scroll; */
+    /* overflow-y: visible; */
+    overflow: auto;
+    width: 100%;
+    height: 55px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+  }
+
+  .slot-tag {
+    height: 35px;
+    margin-left: 10px;
+    /* z-index: 99; */
+  }
+
+  .slot-tag:first-child {
+    margin-left: 0;
+  }
+
+  .slot-tag p {
+    font-size: 9px;
+    line-height: 11px;
+  }
+
+  .tag-img {
+    /* margin-top: -18px; */
+    margin-top: 0;
+  }
+
+  /* Tournaments */
+  .tournaments-container {
+    /* grid-template-columns: repeat(1, minmax(100%, 1fr)); */
+    /* grid-template-columns: repeat(auto-fill, minmax(290px, 335px)); */
+    /* justify-content: center; */
+  }
+
+  .tournament-card {
+    overflow: hidden;
+    flex-direction: column;
+    border: none;
+  }
+
+  .tournament-top {
+    width: 100%;
+    /* height: 268px; */
+    min-height: 268px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+  }
+
+  .tournament-card:hover {
+    /* border: 2px solid var(--green); */
+    border: none;
+  }
+
+  .tournament-card:hover .tournament-top {
+    /* border-bottom: 2px solid var(--green); */
+    border: none;
+  }
+
+  .tournament-preview {
+    width: 100%;
+  }
+
+  .tournament-card .btn-container {
+    width: 100%;
+    height: calc(100% - 160px);
+  }
+
+  .tournament-card .tournament-info {
+    height: 145px;
+    padding: 30px 25px 10px 25px;
+  }
+
+  .tournament-card .tournament-date span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: initial;
+  }
+
+
+  .tournament-card .prize-block {
+    margin-top: 10px;
+  }
+
+  .tournament-card .prize-btn {
+    padding: 6px 25px;
+  }
+
+  .tournament-count {
+    position: absolute;
+    top: calc(100% - 163px);
+    left: 13px;
+  }
+
+  .tournament-count span {
+    padding: 8px 28px;
+  }
+
+  /* Bonuses */
+  .bonuses-container {
+    /* grid-template-columns: repeat(1, minmax(100%, 1fr)); */
+  }
+
+  .bonus-card {
+    border: none;
+  }
+
+  .bonus-top {
+    width: 100%;
+    /* height: 268px; */
+    height: auto;
+    overflow: hidden;
+    /* border: 2px solid transparent; */
+    border: none;
+  }
+
+  .bonus-card:hover {
+    /* border: 2px solid var(--green); */
+    border: none;
+  }
+
+  .bonus-card:hover .bonus-top {
+    /* border-bottom: 2px solid var(--green); */
+    border: none;
+  }
+
+  .bonus-preview {
+    width: 100%;
+  }
+
+  .bonus-card .btn-container {
+    width: 100%;
+    height: calc(100% - 80px);
+  }
+
+  .bonus-card .bonus-info {
+    height: 80px;
+    border: none;
+    /* padding: 0 28px; */
+  }
+
+  /* Providers */
+  .providers-block {
+    grid-template-columns: repeat(2, minmax(139px, 1fr));
+    grid-gap: 15px !important;
+  }
+
+  .prov-card {
+    /* max-width: 400px; */
+  }
+
+  .prov-card .prov-img {
+    width: 100%;
+    height: 100px;
+    /* min-height: 100px; */
+    /* height: auto; */
+    margin-bottom: auto;
+  }
+
+  .prov-img img {
+    width: 35%;
+    height: auto;
+  }
+
+  .prov-card .prov-discription {
+    height: 50px;
+    padding: 12px 8px 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .prov-card .prov-name {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .prov-card .prov-count {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 2px;
+  }
+
+  .prov-card .playnow-btn {
+    height: 50px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .prov-img img {
+    width: 55%;
+    height: auto;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Header */
+  .header-container {
+    width: 100%;
+    height: 75px;
+    justify-content: start;
+  }
+
+  .header-container .balance-block {
+    display: none;
+  }
+
+  .menu-btn-container {
+    width: 75px;
+    height: 100%;
+    margin-left: 0;
+  }
+
+  .logo-link{
+    margin: 0 25px;
+    background: url(../images/logo-link-header.png);
+    height: 50px;
+    width: 185px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  ion-toggle.daymode-toggle {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .unlogged {
+    width: inherit;
+    margin-left: auto;
+    margin-right: 25px;
+  }
+
+  .login-btn, .register-btn {
+    margin: 0px 5px;
+    height: 40px;
+    width: 133px;
+  }
+
+  .logged {
+    width: inherit;
+    margin-right: 25px;
+    margin-left: auto;
+  }
+
+  /* Footer */
+  .footer-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .footer-container-top {
+    height: 65px;
+  }
+
+  .footer-container-top img {
+    width: 95px;
+    height: auto;
+    /* padding: 5px 10px; */
+  }
+
+  .footer-container-body {
+    padding-top: 20px;
+    padding-left: 65px;
+    padding-right: 50px;
+  }
+
+  .footer-container-body-top {
+    margin-bottom: 20px;
+  }
+
+  .footer-container-socials a svg {
+    fill: var(--green) !important;
+  }
+
+  .footer-container-links {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+
+  .footer-container-links div {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+    /* margin-right: 70px; */
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer-container-links div:nth-child(odd) {
+    width: 45%;
+    margin-left: 0;
+    margin-right: 5%;
+  }
+
+  .footer-container-links div:nth-child(even) {
+    width: 50%;
+  }
+
+  /* .footer-container-links div:first-child {
+    margin-left: 0;
+  } */
+
+  .footer-container-links div a {
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 40px;
+  }
+
+  .footer-container-links div a.help {
+    margin-top: 0;
+  }
+
+  .footer-logos-bottom {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer-logos-bottom > div {
+    /* width: 27%; */
+    padding: 0;
+  }
+
+  .footer-logos-bottom .logos-bottom-left {
+    display: flex;
+  }
+
+  .footer-logos-bottom .eighteen {
+    /* width: 41px; */
+    /* height: 41px; */
+    /* margin-right: 50%; */
+  }
+
+  /* .footer-logos-bottom .im-casino {
+    width: 41px;
+    height: 41px;
+  } */
+
+  .footer-logos-bottom .logos-bottom-center {
+    text-align: center;
+    width: auto;
+  }
+
+  .footer-logos-bottom .ridotto {
+    width: 80px;
+    height: auto;
+  }
+
+  .footer-logos-bottom .logo-bottom-right {
+    height: 100%;
+    display: flex;
+    /* -webkit-box-pack: end; */
+        /* -ms-flex-pack: end; */
+            /* justify-content: flex-end; */
+    padding-right: 0;
+  }
+
+  /* .logo-bottom-right a:first-child {
+    margin-right: 50%;
+  } */
+
+  .footer-logos-bottom .to-gov {
+    /* width: 46px; */
+    /* height: 46px; */
+  }
+
+  .footer-logos-bottom .to-kkk {
+    /* width: 40px; */
+    /* height: 46px; */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer-copyright {
+    font-size: 10px;
+    padding: 15px 0;
+  }
+
+  /* Homepage */
+  .width-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .page-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  /* .promoted-card:first-child {
+    margin-right: 10px;
+  } */
+
+  .pr-info {
+    height: 40px;
+  }
+
+  .pr-info p {
+    margin-left: 20px;
+  }
+
+  .pr-info span {
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .btn-cnt {
+    height: calc(100% - 40px);
+  }
+
+  .recommended-block {
+    margin-top: 40px;
+  }
+
+  .arrows div {
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+  }
+
+  .arrows div span {
+    width: 5px;
+    height: 8px;
+  }
+
+  .rec-card {
+    /* flex: 0 0 160px; */
+    flex: inherit;
+    width: 24%;
+  }
+
+  .rec-card p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .rec-card span {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 14px;
+  }
+
+  .rec-card > p, .rec-card span {
+    padding: 0 8px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .rec-card .playnow-btn {
+    width: 100%;
+    height: 46.5px;
+    opacity: 1;
+    border-radius: 4px;
+  }
+
+  .rec-card:hover .playnow-btn {
+    border-radius: 0 0 4px 4px;
+  }
+
+  .playnow-btn p {
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  .games-block {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .games-block .title-w-filter {
+    margin-bottom: 20px;
+  }
+
+  .filter-segment {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  .games-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(215px, 1fr));
+    grid-gap: 20px !important;
+  }
+
+  .game-card {
+    max-width: 300px;
+  }
+
+  .game-preview {
+    width: 100%;
+    /* height: 100px; */
+    /* height: auto; */
+    /* min-height: 100px; */
+    /* height: fit-content; */
+    /* max-height: max-content; */
+    /* object-fit: cover; */
+    /* max-height: 180px; */
+    /* overflow: hidden; */
+    margin-bottom: auto;
+    /* width: 245px; */
+    /* height: 174px; */
+  }
+
+  .btn-container {
+    width: 100%;
+    height: calc(100% - 76px);
+  }
+
+  .game-card .game-info {
+    height: 76px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    justify-content: flex-start;
+  }
+
+  .game-card .game-info p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .game-card .game-info span {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .game-card .provider-logo {
+    width: 50px;
+    height: auto;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .fav-block {
+    width: 30px;
+    height: 30px;
+  }
+
+  .fav {
+    width: 15px;
+    height: 14px;
+  }
+
+  .more-games {
+    max-width: 170px;
+  }
+
+  /* .jackpots-margin {
+    margin-top: 40px;
+  } */
+
+  .jackpot-btn-container {
+    width: 115px;
+    height: 30px;
+    bottom: 66px;
+    right: calc(50% - 58px);
+  }
+
+  .jackpot-btn-container p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* Games */
+  .games-page-container .page-title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+
+  .games-page-container ion-segment {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .slots-filter-container {
+    overflow: auto;
+    width: 100%;
+    height: 60px;
+    margin-top: 25px;
+    padding-top: 5px;
+  }
+
+  .slot-tag {
+    height: 35px;
+    margin-left: 10px;
+  }
+
+  .slot-tag:first-child {
+    margin-left: 0;
+  }
+
+  .slot-tag p {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tag-img {
+    margin-top: 0;
+  }
+
+  /* Tournaments */
+  .tournaments-container {
+    /* grid-template-columns: repeat(2, minmax(335px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fill, 336px); */
+    /* justify-content: center; */
+  }
+
+  .tournament-card {
+    overflow: hidden;
+    flex-direction: column;
+    border: none;
+  }
+
+  /* .tournament-top {
+    width: 100%;
+    min-height: 268px;
+    height: auto;
+    overflow: hidden;
+    border: none;
+  } */
+
+  .tournament-card:hover {
+    /* border: 2px solid var(--green); */
+    border: none;
+  }
+
+  .tournament-card:hover .tournament-top {
+    /* border-bottom: 2px solid var(--green); */
+    border: none;
+  }
+
+  .tournament-preview {
+    width: 100%;
+    height: 306px;
+  }
+
+  .tournament-card .btn-container {
+    width: 100%;
+    height: calc(100% - 185px);
+  }
+
+  .tournament-card .tournament-info {
+    height: 185px;
+    padding: 30px 10px 10px 25px;
+  }
+
+  .tournament-card .tournament-date span {
+    max-width: 70%;
+    width: 50%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: initial;
+  }
+
+  .tournament-card .tournament-date span:first-child {
+    margin-right: 0px;
+  }
+
+  .tournament-card .prize-block {
+    margin-top: auto;
+  }
+
+  .tournament-count {
+    top: calc(100% - 205px);
+    left: 10px;
+  }
+
+  /* Bonuses */
+  .bonuses-container {
+    /* grid-template-columns: repeat(2, minmax(331px, 1fr)); */
+  }
+
+  .bonus-card {
+    border: none;
+  }
+
+  .bonus-top {
+    width: 100%;
+    /* height: 308px; */
+    /* height: auto; */
+    overflow: hidden;
+    /* border: 2px solid transparent; */
+    border: none;
+  }
+
+  .bonus-card:hover {
+    /* border: 2px solid var(--green); */
+    border: none;
+  }
+
+  .bonus-card:hover .bonus-top {
+    /* border-bottom: 2px solid var(--green); */
+    border: none;
+  }
+
+  .bonus-preview {
+    width: 100%;
+    height: 308px;
+  }
+
+  .bonus-preview p {
+    height: 100%;
+  }
+
+  .bonus-preview p img {
+    height: 100%;
+  }
+
+  .bonus-card .btn-container {
+    width: 100%;
+    height: calc(100% - 90px);
+  }
+
+  .bonus-card .bonus-info {
+    height: 90px;
+    border: none;
+  }
+
+  .bonus-card .bonus-info p {
+    margin-bottom: 0;
+  }
+
+  /* Providers */
+  .providers-block {
+    grid-template-columns: repeat(3, minmax(214px, 1fr));
+    grid-gap: 20px !important;
+  }
+
+  .prov-card {
+    max-width: 400px;
+  }
+
+  .prov-card .prov-img {
+    width: 100%;
+    /* height: 100px; */
+    /* min-height: 100px; */
+    /* height: auto; */
+    max-height: 155px;
+    margin-bottom: auto;
+  }
+
+  .prov-img img {
+    width: 60%;
+    height: auto;
+  }
+
+  .prov-card .prov-discription {
+    height: 75px;
+    padding: 20px 10px 10px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .prov-card .prov-name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .prov-card .prov-count {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 3px;
+  }
+
+  .prov-card .playnow-btn {
+    height: 75px;
+  }
+
+  .list-provs {
+    margin-bottom: 20px;
+  }
+}

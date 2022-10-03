@@ -1,0 +1,125 @@
+.game-page-width-container {
+  flex-direction: column;
+}
+
+.game-container {
+  width: 100%;
+  max-width: 1060px;
+  /* width: auto; */
+  /* min-width: 70%; */
+  /* height: 70vh; */
+  margin-top: 30px;
+  margin-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--pr-card-bg);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-center-wrapper {
+  flex: 0 0 auto;
+  overflow: hidden;
+  position: relative;
+  padding-top: 56.3%;
+}
+
+.game-center {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+  z-index: 10;
+}
+
+.game-header {
+  height: 50px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-header-logo {
+  width: auto;
+  height: 80%;
+  cursor: pointer;
+}
+
+.game-header-logo img {
+  width: auto;
+  height: 100%;
+  filter: contrast(.1) grayscale(1);
+}
+
+.game-header .close-gme {
+  position: inherit;
+}
+
+.game-canvas {
+  width: 100%;
+  height: 100%;
+  /* height: 70vh; */
+  /* height: calc(100% - 105px); */
+}
+
+.game-canvas-header {
+  width: 100%;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  height: 75px;
+  z-index: 10;
+}
+
+.game-footer {
+  height: 55px;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.game-footer-like-btn {
+  width: 70px;
+  height: 40px;
+  margin-left: auto;
+  background: var(--fullscreen-btn-bg );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.game-footer-like-btn span {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.game-footer-fullscreen-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  background: var(--fullscreen-btn-bg );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.game-footer-like-btn svg,
+.game-footer-fullscreen-btn svg {
+  fill: var(--fullscreen-svg);
+}
+
+.game-footer-like-btn.active span {
+  color: var(--orange);
+}
+
+.game-footer-like-btn.active svg {
+  fill: var(--orange);
+}

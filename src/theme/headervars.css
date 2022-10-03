@@ -1,0 +1,31 @@
+:root {
+ --menu-font: #B7C5C1;
+ --menu-search-bg: rgba(183,197,193,.2);
+ --menu-hr: #E9EEEF;
+ --filter-color-disabled:rgba(28,45,49,.5);
+ --slot-tag:#B7C5C1;
+ --account-container-header:#F1F3F3;
+ --account-container-body:#FFFFFF;
+ --graph-dates:#B7C5C1;
+ --graph-line: #EFF3F9;
+ --hist-trans-img: url('../images/transday.png');
+ --demo-bg:#FFFFFF;
+ --logo-header: url('../images/logo-light.png');
+ --logo-big: url('../images/logo-big-light.png')
+}
+
+body.dark {
+ --menu-font: #61696B;
+ --menu-search-bg: #27383E;
+ --menu-hr: #27383E;
+  --filter-color-disabled:rgba(255,255,255,.5);
+  --slot-tag:#61696B;
+  --account-container-header:#27383E;
+  --account-container-body: #1B2D30;
+  --graph-dates:#61696B;
+  --graph-line: #3F4A4F;
+  --hist-trans-img: url('../images/transnight.png');
+  --demo-bg:#1C2D31;
+  --logo-header: url('../images/logo-dark.png');
+  --logo-big: url('../images/logo-big-dark.png')
+}

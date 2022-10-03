@@ -1,0 +1,105 @@
+.statistics-page {
+  padding: 30px;
+} 
+.stats {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.stats p {
+  margin: 0px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #B7C5C1;
+}
+.pies-container {
+  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pie-container {
+  padding: 0 25px;
+}
+.pies-container .pie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* min-width: 335px; */
+  min-width: 415px;
+  height: auto;
+  background: var(--deposites-bg);
+  border: 1px solid var(--pie-br);
+  border-radius: 4px;
+}
+.pie svg {
+  margin: 0 auto;
+  width: 60%;
+  transition: .3s;
+}
+.data-card {
+  align-items: center;
+}
+.data-card .number {
+  margin-left: 10px;
+  font-size: 26px;
+  line-height: 39px;
+  margin: 0px;
+  margin-left: 5px;
+}
+.data-card .chip-icon {
+  width: 24px;
+  margin-left: 10px;
+}
+.data-line {
+  width: 80%;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.color-bg {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+}
+.single-data-line > p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0px;
+  color: #828282;
+}
+.pie-header {
+  font-size: 16px;
+  width: 80%;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.statistics-page ion-select {
+  border: none;
+  margin-bottom: 10px;
+  padding-left: 0;
+  width: 130px;
+}
+.statistics-page ion-select::part(icon) {
+  background: var(--deposites-bg);
+  border-radius: 4px;
+  border: 5px solid var(--deposites-bg);
+  opacity: 1;
+  padding: 1px;
+  color: var(--green);
+  margin: 0
+}
+.games-chart-container {
+  margin-top: 20px;
+}
+.games-chart {
+  background: var(--deposites-bg);
+  padding: 30px;
+}
+.apexcharts-toolbar {
+  display: none
+}

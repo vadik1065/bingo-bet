@@ -1,0 +1,30 @@
+.loading-hidden .loading-wrapper {
+  background: none;
+  background-image: url(../images/logo-link-header.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 0;
+  box-shadow: none;
+  width: 300px;
+}
+.loading-hidden .spinner-dots.sc-ion-loading-md {
+color: var(--green);
+position: relative;
+top: 40px;
+}
+.centered {
+  display: flex;
+  justify-content: center;
+}
+.loading-hidden .backdrop-no-tappable{
+  /* background: var(--ion-background-color); */
+  background: var(--modal-bg)
+}
+.loading-hidden{
+  --backdrop-opacity: 1;
+  color: green;
+}
+.dark .loading-hidden ion-backdrop,
+.dark .loading-hidden ::part(backdrop) {
+  --backdrop-opacity: 1;
+}

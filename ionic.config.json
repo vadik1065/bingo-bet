@@ -1,0 +1,10 @@
+{
+  "name": "bingo.bet-new",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "hooks": {
+    "build:after": "./build-after.js"
+  }
+}

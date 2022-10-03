@@ -1,0 +1,43 @@
+@import "../../../vars.less";
+
+.user-popover {
+  .user-menu-popover-bonus-item {
+    .title-item {
+      .count-item {
+        // color: #61696b;
+        color: var(--grey);
+      }
+    }
+
+    .rotate90 {
+      transform: rotate(90deg);
+    }
+    .rotate0 {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.vip-container {
+  justify-content: space-between;
+  .item-right {
+    display: flex;
+    line-height: 23px;
+  }
+  .vip-item {
+    .vip-active {
+      color: #268a00;
+    }
+    .vip-no-active {
+      color: #eb5757;
+    }
+  }
+}
+
+@media @breakpoint-4k {
+  .vip-container {
+    .item-right {
+      line-height: 46px;
+    }
+  }
+}

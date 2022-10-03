@@ -1,0 +1,195 @@
+.popover-conteiner-tickets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popover-conteiner-tickets-content .count-tickets-conteiner {
+  margin-bottom: 16px;
+  align-items: center;
+  width: 304px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: var(--modal-header-bg);
+}
+.popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: var(--section-message-text);
+}
+.popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+  font-size: 24px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: right;
+  color: var(--green);
+}
+.popover-conteiner-tickets-content .play-game-button-conteiner {
+  margin-bottom: 24px;
+  width: 304px;
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--modal-header-bg);
+}
+.popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  align-self: stretch;
+  letter-spacing: 0.15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+  color: var(--section-message-text);
+}
+.popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+  --box-shadow: none;
+  width: 149px;
+  height: 50px;
+  --border-radius: 8px;
+}
+.popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+  text-transform: capitalize;
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--btn-text-modal);
+}
+@media  ( min-width: 3400px )  {
+  .popover-conteiner-tickets-content {
+    align-items: center;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner {
+    width: 606px;
+    height: 124px;
+    padding: 32px;
+    margin-bottom: 23px;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+    line-height: 38px;
+    font-size: 32px;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner {
+    margin-bottom: 48px;
+    width: 606px;
+    height: 290px;
+    align-items: center;
+    padding: 32px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 38px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+    color: var(--section-message-text);
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+    --box-shadow: none;
+    width: 298px;
+    height: 100px;
+    --border-radius: 14px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media  ( max-width: 768px )  {
+  .popover-conteiner-tickets-content {
+    align-items: center;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner {
+    margin-bottom: 16px;
+    height: 62px;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner {
+    min-height: 138px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+    color: var(--section-message-text);
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+    width: 149px;
+    height: 50px;
+    --border-radius: 8px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media  ( max-width: 450px )  {
+  .popover-conteiner-tickets-content {
+    align-items: center;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner {
+    width: calc( 100vw - 32px );
+    margin-bottom: 16px;
+    height: 60px;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner {
+    align-items: center;
+    width: calc( 100vw - 32px );
+    min-height: 138px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+    color: var(--section-message-text);
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+    width: 149px;
+    height: 50px;
+    --border-radius: 8px;
+  }
+  .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

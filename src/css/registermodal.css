@@ -1,0 +1,542 @@
+.register-modal::part(content) {
+  min-height: 700px;
+}
+
+.register-modal .mod-container .img-container {
+  margin-left: -2px;
+}
+
+/* .promo-field {
+  margin-bottom: -90px;
+} */
+
+.modal-description span {
+  color: var(--modal-description);
+}
+
+.bit.btn.only-btn {
+  margin: 92px 0 0 auto;
+}
+
+.field-error {
+  border: 1px solid red !important
+}
+
+.policy-checkbox ion-checkbox.checkbox-error {
+  --border-color: red !important;
+}
+
+.field.country {
+  height: 50px;
+  font-size: 14px;
+  color: var(--font-default);
+  background: transparent;
+  border: 1px solid var(--grey);
+  outline: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  /* padding-left: 7px; */
+  padding-right: 40px;
+  padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.flag-select__options {
+  background: var(--header-background);
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, .2);
+  width: 100%;
+  top: -8px;
+  left: 0;
+}
+
+.flag-select__options:focus {
+  outline: none;
+}
+
+.flag-select__option.flag-select__option--placeholder {
+  font-size: 14px;
+  color: var(--input-placeholder);
+  text-align: left
+}
+
+.flag-select .filterBox {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.flag-select .filterBox input {
+  width: 100%;
+  margin: 0;
+}
+
+.file-zone-container, .file-zone-container>* {
+  outline: none;
+}
+
+.flag-select__btn:after {
+  border-top-color: var(--font-default);
+  opacity: 0.33;
+}
+
+.flag-select__btn:after {
+  position: absolute;
+  right: 13px;
+  top: 50%;
+  transform: translateY(-2px);
+}
+
+.field.country, .field.country button {
+  /* padding-left: 7px; */
+  padding-right: 0px;
+  width: 100%;
+}
+
+.ReactFlagsSelect-module_selectOptions__3LNBJ {
+  max-height: 160px !important;
+  top: 40px !important;
+  background: var(--header-background) !important;
+  border: none !important;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%) !important;
+}
+
+.modal-data .input-container .ReactFlagsSelect-module_selectOptions__3LNBJ {
+  top: -17px !important;
+}
+
+.modal-data .input-container.input-lang .ReactFlagsSelect-module_selectOptions__3LNBJ {
+  top: 40px !important;
+}
+
+.ReactFlagsSelect-module_filterBox__3m8EU {
+  background: var(--header-background) !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7:after {
+  margin-right: 11px !important;
+  border-top: 5px solid #1c2d31 !important;
+  opacity: 0.33 !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 100% !important;
+  border: none !important;
+  outline: none !important;
+  font-size: 14px !important;
+}
+
+.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM {
+  padding: 15px 10px !important;
+  margin: 2px 0 !important;
+}
+
+.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM:hover {
+  background: var(--select-hover-bg) !important;
+}
+
+.ReactFlagsSelect-module_selectOptionWithlabel__2GpmM:hover .ReactFlagsSelect-module_label__27pw9 {
+  color: var(--green) !important;
+}
+
+.ReactFlagsSelect-module_label__27pw9 {
+  font-size: 14px !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7:after {
+  border-top-color: var(--font-default) !important;
+}
+
+.ReactFlagsSelect-module_selectBtn__19wW7[aria-expanded="true"]:after {
+  border-bottom-color: var(--font-default) !important;
+}
+
+.ReactFlagsSelect-module_selectValue__152eS {
+  color: var(--flags-placeholder-color) !important;
+  /* opacity: .33; */
+}
+
+/* body.dark .ReactFlagsSelect-module_selectBtn__19wW7:after {
+  border-top: 5px solid #ffffff;
+} */
+
+.flag-select__option {
+  padding: 15px 0px !important;
+  margin: 2px 0;
+}
+
+.flag-select__btn {
+  outline: none !important
+}
+
+ion-list.sc-ion-select-popover,
+ion-list.sc-ion-select-popover-md {
+  max-height: 330px;
+  overflow-y: scroll;
+}
+
+.flag-select__option.has-label span {
+  padding-left: 10px;
+}
+
+.flag-select__option.has-label:hover {
+  background: var(--select-hover-bg);
+}
+
+.flag-select__option.has-label:hover .flag-select__option__label {
+  color: var(--green);
+}
+
+.flag-select__option__icon {
+  top: 0;
+  vertical-align: middle;
+}
+
+.flag-select__option__label {
+  vertical-align: middle;
+}
+
+.mod-container .btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  color: #FFFFFF;
+  background: var(--green);
+  border-radius: 5px;
+  padding: 20px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mod-container .btn-back:hover, .mod-container .btn-back:active, .mod-container .btn-back:focus {
+  opacity: .75;
+}
+
+.mod-container .btn:hover, 
+.mod-container .btn:active, 
+.mod-container .btn:focus {
+  background: var(--green-btn-hover);
+}
+
+.input-container .require-field,
+.policy-checkbox .require-field {
+  color: var(--red);
+}
+
+.modal-question {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.modal-attention {
+  color: #ffffff;
+  margin: 30px 30px 0;
+  font-size: 14px;
+}
+
+.modal-question a.sign-up {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.modal-question a.login-now {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+.modal-question a.sign-up:hover, .modal-question a.sign-up:active, .modal-question a.sign-up:focus {
+  text-decoration: none;
+}
+
+.mod-container .input-container input:focus {
+  border-color: var(--green);
+}
+
+/*Forgot password*/
+
+.modal-subdescription {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 36px;
+  color: var(--modal-grey);
+  font-size: 16px;
+}
+
+.modal-buttons {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  /* margin-top: 35px; */
+  margin-top: auto;
+  margin-bottom: 35px;
+  align-items: center;
+}
+
+.register-modal .modal-buttons {
+  margin-top: 10px;
+}
+
+.modal-buttons .btn {
+  width: 100%;
+  max-width: 158px;
+  margin-left: auto;
+}
+
+.btn-back {
+  cursor: pointer;
+}
+
+.btn-back span {
+  margin-left: 10px;
+  color: var(--modal-grey);
+  font-weight: 500;
+}
+
+.btn-back::before {
+  display: inline-block;
+  content: '';
+  width: 15px;
+  height: 10px;
+  background-image: url('../images/btn-back-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*Account information*/
+
+.register-modal .mod-container .img-container {
+  min-height: 700px;
+  background: url('../images/bg/account-img.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.progress-bar {
+  width: 100%;
+  max-width: 350px;
+  margin: -10px auto 10px;
+}
+
+.progress-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 54px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress-bar li::before {
+  display: block;
+  content: '';
+  width: 23px;
+  height: 3px;
+  background-color: var(--banner-dot);
+}
+
+.progress-bar li.progress-active::before {
+  background-color: var( --green);
+  box-shadow: 0px 1px 6px rgba(127, 244, 174, 0.75);
+}
+
+.register-modal .only-btn {
+  margin: 85px 0 0 auto;
+}
+
+.btn.disabled {
+  opacity: .5;
+}
+
+/*Account information filled*/
+
+.mod-container .input-container input.filled {
+  background-image: var(--input-checked);
+  background-repeat: no-repeat;
+  background-position: right 12px top 50%, 0 0;
+}
+
+/*Personal Details*/
+
+.mod-person .modal-buttons {
+  margin-top: 32px;
+}
+
+/*Contact Details*/
+
+.mod-contact .modal-buttons {
+  margin-top: 32px;
+}
+
+/*Deposite Details*/
+
+.deposite-container {
+  width: 100%;
+  max-width: 350px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mod-container .deposite-container {
+  margin: 0 auto;
+}
+
+.deposite-container .input-container {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.deposite-container .input-container:not(.deposit-daily) {
+  width: 166px;
+}
+
+.policy-checkbox {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+ion-checkbox {
+  --background-checked: var(--green);
+  --border-color-checked: var(--green);
+  --border-width: 1px;
+}
+
+ion-checkbox::part(container) {
+  padding: 2px;
+}
+
+.policy-checkbox ion-checkbox {
+  min-width: 18.5px;
+  min-height: 18.5px;
+  --border-width: 1px;
+  --border-radius: 5px;
+  --border-color: var(--grey);
+  --background-checked: var(--green);
+  --background: var(--cancel-btn-bg);
+  --border-color-checked: var(--grey);
+}
+
+.policy-checkbox ion-checkbox {
+  --background-checked: var(--green);
+  --border-color-checked: var(--green);
+}
+
+.policy-checkbox span {
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 7.5px;
+  margin-top: 1px;
+  color: var(--font-default);
+}
+
+.policy-checkbox span a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+.policy-checkbox span a:hover, .policy-checkbox span a:active, .policy-checkbox span a:focus {
+  text-decoration: none;
+}
+
+/* .deposite-buttons {
+  margin-top: 15px;
+} */
+
+/*ionic select*/
+
+ion-select {
+  /* font-size: 14px; */
+  height: 50px;
+  margin-top: 5px;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+}
+
+.input-container input:focus, ion-select:focus {
+  border-color: var(--green);
+  outline: none;
+}
+
+ion-select::part(icon) {
+  margin-right: 10px;
+}
+
+ion-select-popover ion-list ion-item {
+  --border-width: 0;
+  --inner-border-width: 0;
+}
+
+.popover-content.sc-ion-popover-md,
+ion-popover::part(content) {
+  overflow: visible;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.custom-select {
+  background-color: transparent;
+}
+
+.custom-select .select-interface-option {
+  color: var(--font-default) !important;
+  --background: var(--header-background);
+}
+
+.custom-select ion-list {
+  background: var(--header-background);
+  border-radius: 4px;
+}
+
+/* ion-radio.radio-checked::part(container){
+  background: var(--green);
+} */
+
+/* ion-radio.radio-checked::part(mark) {
+  background: var(--green) !important;
+} */
+
+ion-select.gender, input.zcode {
+  width: 158px;
+}
+
+.field.lang {
+  padding-right: 0px;
+}
+
+.field.lang .flag-select__btn {
+  padding-right: 0px;
+}
+
+.input-container .date-container {
+  justify-content: space-between;
+}
+
+.input-container .date-container ion-select {
+  width: 114px;
+  margin-right: 4px;
+}
+
+.input-container .date-container ion-select:last-child {
+  margin-right: 0;
+}
+
+.number-container .ccode {
+  max-width: 114px;
+  margin-right: 4px;
+}
+
+.radio-icon label {
+  font-size: 14px;
+}

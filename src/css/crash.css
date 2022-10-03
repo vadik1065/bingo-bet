@@ -1,0 +1,288 @@
+.crash-content {
+  margin-top: 40px;
+}
+
+.crash-video-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.crash-video-title {
+  width: 65%;
+  min-width: 680px;
+  position: absolute;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-bottom: 35px;
+  /* left: 35px; */
+  /* bottom: 80px; */
+  bottom: 0;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 50px;
+  color: #ffffff;
+}
+
+.crash-video-title.mob {
+  color: inherit;
+}
+
+.crash-video-title p {
+  margin: 0;
+}
+
+.crash-video-container video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  /* height: 596.25px; */
+}
+
+/* .crash-video-container video[poster] {
+  object-fit: cover;
+} */
+
+.crash-game-container {
+  width: 100%;
+  /* height: 427px; */
+  min-height: 425px;
+  padding: 50px 25px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.crash-game-container.red {
+  background: radial-gradient(50% 50% at 50% 50%, #621E47 0%, #210617 100%);
+}
+
+.crash-game-container.yellow {
+  background: radial-gradient(50% 50% at 50% 50%, #4C6614 0%, #453B17 0.01%, #171C03 100%);
+}
+
+.crash-game-container.blue {
+  background: radial-gradient(50% 50% at 50% 50%, #094E4E 0%, #0A1C1C 100%);
+}
+
+.crash-game-container.orange {
+  background: radial-gradient(50% 50% at 50% 50%, #6C3115 0%, #210D03 100%);
+}
+
+.crash-game-big-planet {
+  width: 400px;
+  height: 400px;
+  top: -200px;
+  left: -100px;
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  transition: .3s;
+  /* opacity: 0.5; */
+  /* filter: blur(30px); */
+}
+
+.crash-game-container.red .crash-game-big-planet {
+  background-image: url('../images/bg/crash/red-planet-l-3400.png');
+}
+
+.crash-game-container.yellow .crash-game-big-planet {
+  background-image: url('../images/bg/crash/yellow-planet-l-3400.png');
+}
+
+.crash-game-container.blue .crash-game-big-planet {
+  background-image: url('../images/bg/crash/blue-planet-l-3400.png');
+}
+
+.crash-game-container.orange .crash-game-big-planet {
+  background-image: url('../images/bg/crash/orange-planet-l-3400.png');
+}
+
+.crash-game-container:hover .crash-game-big-planet {
+  transform: translateY(20%);
+}
+
+.crash-game-container:hover .crash-game-container-left {
+  transform: translateY(12.5%);
+}
+
+.crash-game-small-planet {
+  width: 200px;
+  height: 200px;
+  bottom: -100px;
+  right: 0;
+  /* background-size: 100%; */
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  transition: .3s;
+}
+
+.crash-game-container.red .crash-game-small-planet {
+  background-image: url('../images/bg/crash/red-planet-s-3400.png');
+}
+
+.crash-game-container.yellow .crash-game-small-planet {
+  background-image: url('../images/bg/crash/yellow-planet-s-3400.png');
+}
+
+.crash-game-container.blue .crash-game-small-planet {
+  background-image: url('../images/bg/crash/blue-planet-s-3400.png');
+}
+
+.crash-game-container.orange .crash-game-small-planet {
+  background-image: url('../images/bg/crash/orange-planet-s-3400.png');
+}
+
+.crash-game-container:hover .crash-game-small-planet {
+  transform: translateY(-32%);
+}
+
+.crash-game-container:hover .crash-game-container-right {
+  transform: translateY(-12.5%);
+}
+
+.crash-game-container-left {
+  min-width: 204px;
+  width: 204px;
+  height: auto;
+  z-index: 5;
+  transition: .3s;
+}
+
+.crash-game-container-center {
+  width: 37%;
+  z-index: 5;
+}
+
+.crash-game-title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+  color: #ffffff;
+}
+
+.crash-game-description {
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--text-description);
+}
+
+.crash-game-container-right {
+  min-width: 40%;
+  width: 40%;
+  transition: .3s;
+}
+
+.crash-subscribe-container {
+  width: 100%;
+  height: 210px;
+  padding: 65px 40px 65px 35px;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--subscribe-container-bg);
+  border: 1px solid var(--green-border);
+  border-radius: 4px;
+}
+
+.crash-subscribe-left {
+  align-items: center;
+}
+
+.crash-subscribe-left.animate {
+  animation: .2s move1;
+}
+
+@keyframes move1 {
+  from {
+    margin-top: -20px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.crash-subscribe-left.animate2 {
+  animation: .2s move2;
+}
+
+@keyframes move2 {
+  from {
+    margin-top: -20px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+.crash-subscribe-left svg {
+  width: auto;
+  height: 76px;
+  margin-right: 16px;
+}
+
+.crash-subscribe-title {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+.crash-subscribe-description {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--subscribe-text-description);
+}
+
+.crash-subscribe-right {
+  align-items: center;
+}
+
+.crash-subscribe-right .input-container {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.crash-subscribe-right .input-container span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.crash-subscribe-right .input-container input {
+  background: var(--subscribe-input-bg);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.crash-subscribe-right .send-btn {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+.crash-subscribe-right .send-btn.disabled {
+  opacity: .5;
+}
+
+.crash-subscribe-right .send-btn:hover {
+  background: var(--green-btn-hover);
+}
+
+.crash-subscribe-right .send-btn svg {
+  fill: var(--send-icon);
+}

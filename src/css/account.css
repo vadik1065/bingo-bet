@@ -1,0 +1,993 @@
+.account-container-footer, .account-verification .account-footer-btns {
+   background: var(--account-container-header)
+}
+
+.account-container-footer, .account-verification .account-footer-btns {
+   height: 100px;
+   border-radius: 0px 0px 3px 3px;
+}
+
+.avatar-title {
+   margin-right: auto;
+   margin-bottom: 10px;
+}
+
+.pick-avatar-default {
+   margin-top: 25px;
+   color: var(--modal-label);
+   font-size: 14px;
+   line-height: 17px;
+   cursor: pointer;
+   border: 1px solid var(--modal-label);
+   width: -webkit-fit-content;
+   width: -moz-fit-content;
+   width: fit-content;
+   padding: 10px 10px;
+   border-radius: 5px
+}
+
+.avatars-modal .close-gme:hover svg>* {
+   fill: #888888
+}
+ 
+.avatars-modal.mod-window::part(content) {
+   max-width: 580px;
+   border-radius: 8px;
+   background: var(--modal-bg);
+   /* background: transparent; */
+}
+
+.avatars-modal .absolute-close-modal {
+   width: 24px;
+   height: 24px;
+   top: 12px;
+   right: 12px;
+   background: var(--modal-close-circle);
+   border-radius: 50%;
+}
+
+.avatars-modal .absolute-close-modal svg {
+   width: 12px;
+   height: 12px;
+   transition: .3s;
+}
+
+.avatars-modal .absolute-close-modal:hover svg {
+   transform: rotate(90deg);
+}
+
+.avatars-container {
+   padding: 20px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   gap: 10px;
+   /* display: flex; */
+   /* flex-wrap: wrap; */
+   /* width: 90%; */
+   /* margin: 50px auto; */
+   /* align-items: center; */
+   /* justify-content: center; */
+}
+
+.pick-avatar {
+   width: 100px;
+   height: 100px;
+   position: relative;
+   /* flex: 0 0 100px; */
+   transition: .3s;
+   border-radius: 50%;
+   /* border: none; */
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.pick-avatar:hover {
+   box-shadow: 0 0 0 2px var(--green);
+   -webkit-appearance: none;
+   /* border: 1px solid #888888; */
+}
+
+.account-verification .account-footer-btns {
+   margin-left: -37px;
+   margin-top: 30px;
+   width: 1060px;
+   width: calc(100% + 74px);
+   margin-bottom: -37px;
+}
+
+.avatar-link {
+   width: 50px;
+   height: 40px;
+   position: absolute;
+   bottom: -15px;
+   left: -10px;
+   cursor: pointer;
+   z-index: 50;
+   animation: .9s ease-in infinite reverse movesvg;
+}
+
+@-webkit-keyframes movesvg {
+   from {
+      height: 40px;
+   }
+   to {
+      height: 45px;
+   }
+}
+
+@keyframes movesvg {
+   from {
+      height: 40px;
+   }
+   to {
+      height: 45px;
+   }
+}
+
+.avatar-link svg {
+   width: 100%;
+   height: 100%
+}
+
+.dropzone, .file-zone, .file-zone-active {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.thumbs-container {
+   cursor: pointer
+}
+
+.file-zone-container .verify-prev, .file-zone-container .thumb {
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.account-container-body .userpic {
+   width: 86px;
+   height: 86px;
+   border-radius: 50%;
+}
+
+.avatar-prev {
+   width: 86px;
+   height: 86px;
+   background-color: var(--account-container-body) !important;
+   background-size: cover!important;
+   background-position: 50%!important;
+   background-repeat: no-repeat!important;
+   /* border-radius: 50%; */
+   /* -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%; */
+}
+
+.account-container-header {
+   height: 55px;
+   justify-content: space-between;
+   box-shadow: 0px 4px 30px rgba(75, 90, 81, 0.25);
+   margin-top: 30px
+}
+
+.account-container-body {
+   background: var(--account-container-body);
+   min-height: 100px;
+}
+
+.account-page .width-container {
+   margin-bottom: auto;
+}
+
+.save-btn.save-psword {
+   width: 271px;
+}
+
+.current-device ion-checkbox {
+   opacity: 1 !important
+}
+
+/* .current-device.color_3 .amount {
+   margin-right: 5px;
+}
+
+.current-device.color_3 img {
+   margin-right: 5px;
+   vertical-align: middle;
+} */
+
+/* .account-container .flag-select__btn:after {
+   margin-left: 11px;
+} */
+
+.account-container {
+   box-shadow: 0px 4px 30px rgba(75, 90, 81, 0.25);
+   margin-bottom: 50px;
+   border-radius: 3px;
+}
+
+.account-page {
+   min-height: 100%;
+   justify-content: space-between;
+}
+
+.account-header-tab {
+   flex: 0 1 33%;
+   display: block;
+   cursor: pointer;
+   transition: .3s;
+   background: var(--account-container-header);
+   padding: 0 10px;
+}
+
+.account-header-tab:first-child {
+   border-radius: 3px 0 0 0;
+}
+
+.account-header-tab:first-child {
+   border-radius: 0 3px 0 0;
+}
+
+.account-header-tab p {
+   margin: 0px;
+   text-align: center;
+   color: var(--menu-font);
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   margin-bottom: 16px;
+}
+
+.account-header-tab .img-center-account {
+   /* width: 35px; */
+   height: 35px;
+   margin: 0 auto;
+   display: flex;
+   margin-top: -15px;
+   margin-bottom: 5px;
+   align-items: center;
+   transition: .3s;
+}
+
+.account-header-tab .img-center-account {
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.account-header-tab:first-child .img-center-account {
+   background-image: var(--cab-img);
+}
+
+.account-header-tab:nth-child(2) .img-center-account {
+   background-image: var(--contact-img);
+}
+
+.account-header-tab:nth-child(3) .img-center-account {
+   background-image: var(--games-img);
+}
+
+.account-header-tab:nth-child(4) .img-center-account {
+   background-image: var(--multiple-img);
+}
+
+.account-header-tab:nth-child(5) .img-center-account {
+   background-image: var(--verify-img);
+}
+
+.account-header-tab:nth-child(6) .img-center-account {
+   background-image: var(--close-img);
+}
+
+.active.account-header-tab:first-child .img-center-account {
+   background-image: url(../images/account-tabs/cab-active.png);
+}
+
+.active.account-header-tab:nth-child(2) .img-center-account {
+   background-image: url(../images/account-tabs/contact-active.png);
+}
+
+.active.account-header-tab:nth-child(3) .img-center-account {
+   background-image: url(../images/account-tabs/games-active.png);
+}
+
+.active.account-header-tab:nth-child(4) .img-center-account {
+   background-image: url(../images/account-tabs/multiple-active.png);
+}
+
+.active.account-header-tab:nth-child(5) .img-center-account {
+   background-image: url(../images/account-tabs/verify-active.png);
+}
+
+.active.account-header-tab:nth-child(6) .img-center-account {
+   background-image: url(../images/account-tabs/close-active.png);
+}
+
+.account-header-tab.active {
+   background: var(--green);
+   border-radius: 3px !important;
+}
+
+.account-header-tab.active p {
+   color: #ffffff;
+}
+
+.save-btn.delete {
+   margin-left: auto;
+   background: #EB5757;
+   width: 246px;
+}
+
+.change-password {
+   background: var(--orange);
+   border-radius: 8px;
+   height: 50px;
+   cursor: pointer;
+   display: flex;
+   margin-left: 37px;
+   margin-right: auto;
+   align-items: center;
+   width: 203.38px;
+}
+
+.change-password:hover {
+   background: #E48C3D;
+}
+
+.save-btn {
+   background: var(--green);
+   border-radius: 8px;
+   height: 50px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   width: 158px;
+   margin-right: 24px;
+}
+
+.save-btn:not(.disabled):hover {
+   background: var(--green-btn-hover);
+}
+
+.save-btn.disabled {
+   opacity: .5;
+}
+
+.save-btn.justify-center {
+   justify-content: center;
+}
+
+.cancel-btn {
+   background: var(--cancel-btn);
+   border-radius: 8px;
+   height: 50px;
+   width: 158px;
+   cursor: pointer;
+   margin-left: auto;
+   margin-right: 16px;
+   display: flex;
+   align-items: center;
+}
+
+.cancel-btn:not(.disabled):hover {
+   background: var(--cancel-btn-hover);
+}
+
+body:not(.dark) .cancel-btn:not(.disabled):hover {
+   color: var(--green);
+}
+
+.change-password p, .save-btn p, .cancel-btn p {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   margin: 0 auto;
+   text-align: center;
+   color: #fff;
+}
+
+.account-footer-btns {
+   align-items: center;
+   height: 100%;
+}
+
+.account-footer-btns .calculated {
+   margin-left: 37px;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.account-footer-btns .calculated span {
+   opacity: .5;
+}
+
+body:not(.dark) .cancel-btn:not(.disabled):hover p {
+   color: var(--green);
+}
+
+.cancel-btn p {
+   color: var(--font-default);
+   /* color: #8B9A96; */
+}
+
+.balance .save-btn {
+   margin-left: auto;
+}
+
+/*dev css*/
+
+.account-fields-container, .account-table, .account-verification, .account-closure {
+   padding: 25px 37px;
+   min-height: 580px;
+}
+
+.account-title {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28px;
+   color: var(--grey);
+   margin-bottom: 30px;
+}
+
+/*Personal info 1*/
+
+.account-fields-container {
+   background: url(../images/account-container-image.svg) right 120px no-repeat;
+   position: relative;
+}
+
+.account-fields-container:not(.games-limit) {
+   flex-direction: column;
+}
+
+.user-image {
+   width: 86px;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 20px;
+   position: relative;
+}
+
+.user-image span:first-child {
+   color: var(--modal-label);
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.user-image span:last-child {
+   width: 86px;
+   height: 86px;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--user-image-bg);
+   border-radius: 50%;
+   border: 1px solid var(--user-image-br);
+   ;
+   margin-top: 5px;
+}
+
+.user-image span:last-child::before {
+   display: block;
+   content: '';
+   width: 29px;
+   height: 24px;
+   background-image: var(--user-image-svg);
+}
+
+.warning-message {
+   width: 100%;
+   width: calc(100% - 60px);
+   max-width: 480px;
+   background-color: var(--warning-message-bg);
+   font-size: 14px;
+   padding: 10px;
+   padding-left: 52px;
+   position: relative;
+   border-radius: 4px;
+   position: absolute;
+   top: 68%;
+   left: 420px;
+   z-index: 100;
+}
+
+.warning-message * {
+   color: var(--orange);
+}
+
+.warning-message p:first-of-type {
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.warning-icon {
+   position: absolute;
+   top: 0;
+   left: 0;
+   align-items: center;
+   justify-content: center;
+   width: 34px;
+   height: 34px;
+   background-color: rgba(235, 87, 87, .1);
+   border-radius: 4px;
+}
+
+.warning-icon::before {
+   display: block;
+   content: '';
+   width: 20px;
+   height: 20px;
+   background-image: url(../images/warning-icon.svg);
+}
+
+.referral-container {
+   width: 54%;
+   max-width: 573px;
+   padding: 25px;
+   margin-bottom: 20px;
+   position: absolute;
+   top: 45px;
+   left: 420px;
+   z-index: 100;
+   background: var(--user-image-bg);
+   border-radius: 3px;
+}
+
+.referral-header {
+   margin-bottom: 25px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.referral-title {
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+}
+
+.referral-header svg {
+   fill: var(--grey);
+}
+
+.referral-body-item {
+   margin-bottom: 20px;
+   position: relative;
+}
+
+.referral-body-item-top {
+   margin-bottom: 5px;
+   font-size: 14px;
+   line-height: 17px;
+   color: #61696B;
+}
+
+.referral-body-item-bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+}
+
+.referral-body-field {
+   width: 100%;
+   max-width: 317.39px;
+   height: 50px;
+   margin-right: 13px;
+   padding: 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: var(--referral-field-color);
+   border-radius: 5px;
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.referral-body-field.refcode {
+   padding: 0;
+}
+
+.referral-body-field.with-edit {
+   padding-right: 0;
+}
+
+.referral-body-field-edit-container {
+   width: 50px;
+   min-width: 50px;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.referral-body-field-edit-container.active {
+   background: var(--edit-container-bg);
+}
+
+.referral-body-field-refcode-input {
+   width: 100%;
+   height: 100%;
+   padding: 0 20px;
+   border: none;
+   outline: none;
+   background: var(--referral-field-color);
+}
+
+.referral-body-field.input {
+   border: none;
+   outline: none;
+}
+
+.referral-body-field.big {
+   max-width: inherit;
+   margin-right: 0;
+}
+
+.referral-body-field span {
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   overflow: hidden;
+}
+
+.referral-body-field-edit-container svg {
+   fill: var(--grey);
+}
+
+.referral-body-field-edit-container.active svg {
+   fill: var(--edit-active-svg);
+}
+
+.underline {
+   text-decoration: underline;
+}
+
+.referral-body-btn {
+   min-width: 192px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   border: 1px solid var(--green);
+   border-radius: 3px;
+   font-weight: 500;
+   font-size: 14px;
+   line-height: 17px;
+   text-transform: uppercase;
+   color: var(--green);
+   cursor: pointer;
+}
+
+.referral-body-btn.green {
+   background: var(--green);
+   color: #ffffff;
+}
+
+.referral-body-btn.green span {
+   color: #ffffff;
+}
+
+.referral-body-btn.disabled {
+   background: var(--btn-disabled);
+   border: none;
+}
+
+.referral-body-btn.disabled span {
+   opacity: .5;
+}
+
+.referral-body-btn:hover:not(.disabled) {
+   background: var(--green);
+   color: #ffffff;
+}
+
+.input-container-item {
+   width: 100%;
+   height: 50px;
+   margin-top: 5px;
+   /* padding-left: 13px; */
+   align-items: center;
+   /* border: 1px solid var(--grey); */
+   border-radius: 8px;
+   position: relative;
+}
+
+/* .input-container-item:hover {
+   border: 1px solid var(--green);
+} */
+
+.input-container-item input {
+   height: 100%;
+   margin: 0;
+   padding-left: 44px;
+   /* border: none; */
+}
+
+.input-container-item .bc-icon {
+   /* width: 20px; */
+   position: absolute;
+   left: 13px;
+}
+
+/*Change password*/
+
+.account-fields-container .password {
+   /* background: var(--password-eye-opened); */
+   background-repeat: no-repeat;
+   background-position: right 15px top 50%, 0 0;
+   padding-right: 45px;
+}
+
+.account-fields-container .password-opened {
+   /* background: var(--password-eye-closed); */
+   background-repeat: no-repeat;
+   background-position: right 15px top 50%, 0 0;
+   padding-right: 45px;
+}
+
+.input-container .validation-message {
+   font-size: 12px;
+   color: var(--red);
+   margin-top: 6px;
+}
+
+.input-container .validation-message::before {
+   display: block;
+   content: '';
+   width: 15px;
+   height: 15px;
+   background: url(../images/error-cross.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin-right: 5px;
+}
+
+/*Games Limit*/
+
+.games-limit {
+   background-image: none;
+}
+
+.games-limit>div {
+   width: 100%;
+   max-width: 350px;
+}
+
+.games-limit-right {
+   margin-left: 100px;
+}
+
+.games-limit-right-bottom .account-title {
+   margin-top: 54px;
+}
+
+/*Multiple Logins*/
+
+.account-table table {
+   width: 100%;
+}
+
+.account-table th {
+   font-size: 15px;
+   color: #919699;
+   font-weight: 500;
+   padding: 15px;
+   border-bottom: 2px solid var(--account-table-br);
+}
+
+.account-table th:first-child, .account-table th:nth-child(2) {
+   text-align: left;
+   padding-left: 0;
+}
+
+.account-table th:first-child div {
+   color: #919699;
+}
+
+.sort-btns {
+   padding-right: 12px;
+}
+
+.sort-btns div {
+   width: 10px;
+   height: 7px;
+}
+
+.sort-btns .sort-btn-up {
+   margin-bottom: 2px;
+}
+
+.sort-btns .sort-btn-up svg, .sort-btns .sort-btn-down svg {
+   fill: var(--sort-btn);
+   cursor: pointer;
+   vertical-align: top;
+}
+
+.sort-btns .active svg {
+   fill: var(--green);
+}
+
+.account-table td {
+   text-align: center;
+   padding: 10px;
+   border-bottom: 1px solid var(--account-table-br);
+}
+
+.account-table td:first-child, .account-table td:nth-child(2) {
+   text-align: left;
+   padding-left: 0;
+}
+
+.device-title {
+   font-size: 14px;
+}
+
+.device-title div:first-child {
+   font-size: 20px;
+   font-weight: 500;
+   margin-bottom: 5px;
+   letter-spacing: 0.15px;
+   color: var(--account-black);
+}
+
+.device-title .device-active {
+   color: var(--green);
+}
+
+.device-title .device-noactive {
+   color: var(--orange);
+}
+
+.device-title span:last-child {
+   color: #61696B;
+}
+
+.address-title {
+   font-size: 15px;
+   color: var(--address-title);
+}
+
+.with-img img {
+   margin-left: 5px;
+}
+
+.action-btn {
+   width: 166px;
+}
+
+.action-btn div {
+   width: 100%;
+   height: 40px;
+   padding: 0 20px;
+   margin: 0 auto;
+   line-height: 40px;
+   background-color: var(--action-btn-bg);
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--orange);
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+/*Account Verification*/
+
+.account-verification .account-title {
+   margin-bottom: 10px;
+}
+
+.account-description {
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 20px;
+   opacity: .5;
+}
+
+.verification-steps {
+   margin-top: 40px;
+}
+
+.step-title {
+   font-size: 16px;
+   font-weight: 500;
+   color: var(--account-black);
+}
+
+.step-title svg {
+   fill: var(--grey);
+   margin-right: 15px;
+}
+
+.file-loading {
+   width: 100%;
+   max-width: 350px;
+   height: 135px;
+   margin-top: 20px;
+   border: 1px dashed var(--grey);
+   border-radius: 5px;
+   background: rgba(183, 197, 193, 0.1) url(../images/file-loading.svg) center center no-repeat;
+}
+
+.file-zone-container {
+   height: 135px;
+}
+
+.step-one, .step-two {
+   width: 100%;
+   max-width: 350px;
+}
+
+.step-one {
+   margin-right: 130px;
+}
+
+.step-two.add-docks {
+   min-height: 390px;
+}
+
+.step-two-content {
+   margin-top: 20px;
+}
+
+.step-two-content p {
+   font-size: 12px;
+   line-height: 18px;
+   margin: 0;
+}
+
+.step-two-content * {
+   color: var(--account-black);
+}
+
+.step-two-content em {
+   opacity: .5;
+}
+
+.text-accent {
+   color: var(--orange);
+   font-weight: 500;
+}
+
+/*Account Closure*/
+
+.account-closure {
+   width: 100%;
+   max-width: 500px;
+}
+
+.account-closure-content p {
+   font-size: 14px;
+   font-weight: 500;
+   line-height: 13px;
+   opacity: 0.5;
+}
+
+.account-closure-content p:last-of-type {
+   color: var(--orange);
+   line-height: 20px;
+   opacity: 1;
+}
+
+.file-zone-container, .file-zone-container>* {
+   /* height: 100%; */
+}
+
+.thumbs-titles span {
+   font-size: 10px;
+   opacity: .5;
+}
+
+section.file-zone-container {
+   position: relative;
+}
+
+.file-loading {
+   height: auto;
+}
+
+.thumbs-titles {
+   padding: 5px 8px;
+}

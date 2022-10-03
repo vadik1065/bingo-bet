@@ -1,0 +1,14 @@
+{
+  "appId": "bingo.bet.starter",
+  "appName": "Bingo Bet",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "linuxAndroidStudioPath": "/home/anton/android-studio-new/android-studio/bin/studio.sh",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

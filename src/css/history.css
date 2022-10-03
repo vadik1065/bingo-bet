@@ -1,0 +1,196 @@
+.account-container .hist-header {
+  justify-content: flex-start;
+}
+.account-container .hist-header .account-header-tab {
+  flex: 0 1 175px;
+}
+.apexcharts-canvas * {
+  cursor: default;
+  font-family: 'Rubik', sans-serif !important;
+}
+.apexcharts-title-text {
+  fill: var(--font-default);
+  font-size: 20px;
+}
+.apexcharts-legend-text {
+  color: var(--font-default) !important;
+  font-weight: bold !important;
+  top: -4px;
+}
+.apexcharts-legend-marker {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 5px !important;
+}
+ .apexcharts-xaxis-label *,
+ .apexcharts-yaxis-label * {
+   fill: var(--graph-dates)
+ }
+ .apexcharts-tooltip,
+ .apexcharts-xaxistooltip {
+   display: none;
+ }
+ .apexcharts-grid rect {
+   fill: transparent !important;
+
+ }
+.apexcharts-gridlines-horizontal line {
+  stroke: var(--graph-line) !important
+}
+.transaction-graph-container {
+  max-width: 768px;
+  margin-top: 20px;
+  border: 1px solid #EBEBEB;
+  background: #FDFDFF;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.dark .transaction-graph-container {
+  border: 1px solid transparent;
+  background: var(--deposites-bg);
+}
+.img-center-history {
+  height: 35px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: -15px;
+  margin-bottom: 5px;
+  align-items: center;
+  transition: .3s;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hist-header .trans {
+  background-image: var(--hist-trans-img);
+}
+.dark .hist-header .c-games {
+    background-image: url('../images/casinonight.png');
+}
+.hist-header .c-games {
+    background-image: url('../images/casinoday.png');
+}
+.hist-header .active .trans {
+  background-image: url('../images/transactions.png');
+}
+.hist-header .active .c-games {
+  background-image: url('../images/casinogames.png');
+}
+.hist-header.account-container-header {
+  justify-content: flex-start;
+}
+.hist-header:after {
+  display: block;
+  content: '';
+  background: var(--account-container-header);
+  border-radius: 0 3px 0 0;
+  flex-grow: 1;
+}
+.transactions-page-container {
+  width: 93%;
+  margin: 20px auto;
+  padding: 20px 0;
+  margin-top: 0px;
+}
+.buttons-container {
+  justify-content: space-between;
+}
+.buttons-container .history-button {
+  max-width: 156px;
+  width: 100%;
+  height: 51px;
+  transition: .3s;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--menu-font);
+  background: var(--account-container-header);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.dark .buttons-container .history-button  {
+  color: #B7C5C1;
+}
+.buttons-container .history-button.current {
+  background: var(--orange);
+  color: #FFFFFF
+}
+.apexcharts-xaxis-label tspan {
+  font-size: 12px;
+  font-weight: 500;
+}
+.notransactions {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.daypicker-btns-ovrl {
+  align-items: flex-end;
+}
+.daypicker-btns-ovrl .showbtn  {
+  width:135.63px;
+  height:50px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  background: #268A00;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+.dark .daypicker-btns-ovrl .showbtn {
+  opacity: .7
+}
+.color_1 {
+  color: #61696B !important;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+}
+.color_2 {
+  color: var(--green) !important;
+  font-size: 15px;
+    font-weight: 500;
+  letter-spacing: 0.15px;
+  text-transform: capitalize;
+}
+.color_3 {
+  color: #1C2D31 !important;;
+  font-size: 15px;
+  letter-spacing: 0.15px;
+}
+.dark .color_3 {
+  color: #FFFFFF !important;
+}
+.hist-table tr {
+  height: 50px;
+}
+.curId {
+  color:var(--green)
+}
+.hist-header .account-header-tab{
+  max-width: 156px;
+}
+.with-pie {
+  max-width: 489.37px;
+  max-height: 364px;
+}
+.upper {
+  text-transform: capitalize;
+}
+.with-pie .pie-header {
+  margin-top: 0
+}
+.with-pie .pie {
+   width: 100%;
+   height: 100%;
+ }
+.with-pie .pie svg {
+  max-width: 160px;
+  margin: 0 auto;
+  display: block;
+}

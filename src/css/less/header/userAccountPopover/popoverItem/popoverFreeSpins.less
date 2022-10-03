@@ -1,0 +1,96 @@
+@import "../../../../vars.less";
+
+@countSize: 18px;
+.popover-conteiner-freespin-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  .count-freespin-conteiner {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    gap: 24px;
+    width: 304px;
+    height: 66px;
+    background-color: var(--modal-header-bg);
+    .name-free-spins {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: 0.15px;
+      color: var(--section-message-text);
+    }
+    .count-tickets {
+      font-size: 24px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      line-height: 34px;
+      text-align: right;
+      color: var(--green);
+    }
+  }
+}
+
+@media @breakpoint-4k {
+  .popover-conteiner-freespin-content {
+    align-items: center;
+    .count-freespin-conteiner {
+      margin-bottom: 48px;
+      padding: 32px;
+      gap: 40px;
+      width: 606px;
+      height: 124px;
+      .name-free-spins {
+        font-size: 32px;
+        line-height: 38px;
+      }
+      .count-tickets {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+  }
+}
+
+@media @breakpoint-tablet {
+  .popover-conteiner-freespin-content {
+    align-items: center;
+    .count-freespin-conteiner {
+      margin-bottom: 24px;
+      height: 62px;
+      .name-free-spins {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .count-tickets {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media @breakpoint-mobile {
+  .popover-conteiner-freespin-content {
+    align-items: center;
+    .count-freespin-conteiner {
+      width: ~"calc( 100vw - 32px )";
+      margin-bottom: 24px;
+      height: 62px;
+      .name-free-spins {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .count-tickets {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}

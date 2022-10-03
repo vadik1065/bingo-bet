@@ -1,0 +1,90 @@
+.forbidden-window::part(content) {
+  height: auto;
+  min-height: 200px;
+}
+.mod-confirm  {
+  border-radius: 4px;
+}
+.mod-confirm .modal-data {
+  padding: 37px 52px 10px;
+}
+.forbidden-modal-logo {
+  width: 20%;
+  margin: 0 auto;
+  display: block;
+}
+.forbidden-modal-title {
+  text-align: center;
+  font-weight: 700;
+}
+.forbidden-modal-description {
+  text-align: center;
+  font-size: 14px;
+  opacity: .7;
+}
+
+
+/* kyc modal */
+.kyc-window .mod-confirm .modal-data {
+  padding: 30px 50px;
+}
+
+.kyc-window .forbidden-modal-logo {
+  margin-bottom: 30px;
+}
+
+.kyc-window .forbidden-modal-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.kyc-window .forbidden-modal-description {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.kyc-window .footer-container-socials {
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .kyc-window .mod-confirm .modal-data {
+    padding: 30px 50px;
+  }
+
+  .kyc-window .footer-container-socials a svg {
+    fill: #B7C5C1 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .kyc-window.mod-window .mod-confirm .modal-data {
+    padding: 30px;
+  }
+
+  .kyc-window.mod-window .forbidden-modal-logo {
+    width: 40%;
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
+
+  .kyc-window .forbidden-modal-title {
+    font-size: 18px;
+  }
+
+  .kyc-window .forbidden-modal-description {
+    font-size: 12px;
+  }
+
+  .kyc-window .footer-container-socials {
+    max-width: 80%;
+    gap: 20px;
+  }
+
+  .kyc-window .footer-container-socials a {
+    margin: 0;
+  }
+}

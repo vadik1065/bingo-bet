@@ -1,0 +1,1015 @@
+.bonuses-popover {
+  --border-radius: 8px;
+}
+.headers-bonuses-popover {
+  font-family: "Rubik";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  color: var(--section-message-text);
+}
+.bonuses-popover,
+.bonuses-modal {
+  --width: 336px;
+  --height: "inherit";
+}
+.bonuses-popover ion-header,
+.bonuses-modal ion-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 20px 14px 20px;
+  justify-content: space-between;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .img-conrainer,
+.bonuses-modal .img-conrainer {
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+.bonuses-popover .img-conrainer img,
+.bonuses-modal .img-conrainer img {
+  margin-top: -75px;
+  width: 142%;
+  height: 142%;
+  object-fit: cover;
+}
+.bonuses-popover .conteiner-item,
+.bonuses-modal .conteiner-item {
+  background-color: var(--header-background);
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+.bonuses-popover .info-content,
+.bonuses-modal .info-content {
+  padding: 0px;
+  box-shadow: none;
+}
+.bonuses-popover .popover-conteiner-vip-content,
+.bonuses-modal .popover-conteiner-vip-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner {
+  width: 304px;
+  display: flex;
+  flex-direction: column;
+  height: 86px;
+  justify-content: space-around;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .title,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .title {
+  font-family: "Rubik";
+  font-style: normal;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-size: 16px;
+  width: 120px;
+  height: 22px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  font-family: "Rubik";
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: var(--green);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus.opacity,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus.opacity {
+  opacity: 0.3;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 6px;
+  gap: 10px;
+  height: 24px;
+  border-radius: 4px;
+  color: var(--red);
+  background-color: var(--red-btn-hover-opaciti);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 6px;
+  gap: 10px;
+  border-radius: 4px;
+  color: var(--green);
+  background-color: var(--green-btn-hover-opacity);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner .second-yarus,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner .second-yarus {
+  line-height: 24px;
+  font-size: 14px;
+  align-items: flex-end;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption,
+.bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption {
+  color: var(--text-description);
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #61696b;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner,
+.bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner {
+  margin-bottom: 16px;
+  width: 304px;
+  height: 76px;
+  display: flex;
+  flex-direction: row;
+  font-family: "Rubik";
+  font-style: normal;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 16px;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div,
+.bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner .first-columg,
+.bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner .first-columg {
+  width: 134px;
+  height: 44px;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner .vip,
+.bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner .vip {
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner .rake-return,
+.bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner .rake-return {
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner .count-return,
+.bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner .count-return {
+  text-align: right;
+  line-height: 45px;
+  font-size: 24px;
+  font-weight: 500;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  color: var(--green);
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner {
+  width: 304px;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  justify-content: space-around;
+  height: 142px;
+  margin-bottom: 24px;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .first-yarus,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .first-yarus {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  left: 39.5px;
+  top: 16px;
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .how-receive-vip,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .how-receive-vip {
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .make-min-deposit,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .make-min-deposit {
+  color: var(--section-message-text);
+  margin-bottom: -5px;
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .text-button-deposit,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .text-button-deposit {
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 0.15px;
+  line-height: 25px;
+  color: var(--btn-text-modal);
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .img-deposit,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .img-deposit {
+  padding-right: 12px;
+}
+.bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner ion-button,
+.bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner ion-button {
+  --box-shadow: none;
+  align-items: center;
+  width: 134px;
+  height: 50px;
+  --border-radius: 8px;
+}
+@media  ( min-width: 3400px )  {
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner {
+    margin-bottom: 23px;
+    width: 606px;
+    height: 164px;
+    padding: 32px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .title,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .title {
+    font-size: 32px;
+    width: 200px;
+    height: 38px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus {
+    font-size: 48px;
+    line-height: 60px;
+    color: var(--green);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background {
+    line-height: 44px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive {
+    font-size: 28px;
+    padding: 10px;
+    gap: 10px;
+    width: 129px;
+    height: 44px;
+    border-radius: 8px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active {
+    font-size: 28px;
+    width: 107px;
+    height: 44px;
+    padding: 0px 10px;
+    gap: 10px;
+    border-radius: 8px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption {
+    font-size: 28px;
+    line-height: 40px;
+    color: #61696b;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner {
+    width: 606px;
+    height: 140px;
+    gap: 40px;
+    padding: 32px;
+    align-items: center;
+    margin-bottom: 23px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .first-columg,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .first-columg {
+    height: 76px;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .count-return,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .count-return {
+    line-height: 80px;
+    font-size: 48px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .vip,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .vip {
+    color: var(--section-message-text);
+    line-height: 38px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .rake-return,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .rake-return {
+    color: var(--section-message-text);
+    line-height: 38px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner {
+    width: 606px;
+    padding: 32px;
+    gap: 50px;
+    height: 290px;
+    margin-bottom: 48px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .first-yarus,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .first-yarus {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .how-receive-vip,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .how-receive-vip {
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .make-min-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .make-min-deposit {
+    color: var(--section-message-text);
+    margin-bottom: -18px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .text-button-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .text-button-deposit {
+    font-size: 32px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner .img-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner .img-deposit {
+    padding-right: 19.69px;
+    width: 70px;
+    height: 45px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner ion-button,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner ion-button {
+    width: 259px;
+    height: 100px;
+    --border-radius: 14px;
+  }
+}
+@media  ( max-width: 768px )  {
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner {
+    height: 84px;
+    margin-bottom: 16px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .title,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive {
+    font-size: 14px;
+    min-width: 67px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active {
+    font-size: 14px;
+    min-width: 56px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption {
+    color: var(--text-description);
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner {
+    margin-bottom: 16px;
+    height: 72px;
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .first-columg,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .first-columg {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .vip,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .vip {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .rake-return,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .rake-return {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .count-return,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .count-return {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .first-yarus,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .first-yarus {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .how-receive-vip,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .how-receive-vip {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .make-min-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .make-min-deposit {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+    margin-bottom: -5px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .text-button-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .text-button-deposit {
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.15px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .img-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .img-deposit {
+    padding-right: 12px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div ion-button,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div ion-button {
+    width: 134px;
+    height: 50px;
+    --border-radius: 8px;
+  }
+}
+@media  ( max-width: 450px )  {
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner {
+    width: calc( 100vw - 32px );
+    height: 84px;
+    margin-bottom: 16px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .title,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .count-horus {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.inactive {
+    font-size: 14px;
+    min-width: 67px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner > div .status-background .status.active {
+    font-size: 14px;
+    min-width: 56px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption,
+  .bonuses-modal .popover-conteiner-vip-content .vip-status-conteiner .second-yarus .caption {
+    color: var(--text-description);
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner {
+    width: calc( 100vw - 32px );
+    margin-bottom: 16px;
+    height: 72px;
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .first-columg,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .first-columg {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .vip,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .vip {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .rake-return,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .rake-return {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .vip-rake-return-conteiner > div .count-return,
+  .bonuses-modal .popover-conteiner-vip-content .vip-rake-return-conteiner > div .count-return {
+    line-height: 28px;
+    font-size: 22px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner {
+    width: calc( 100vw - 32px );
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .first-yarus,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .first-yarus {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .how-receive-vip,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .how-receive-vip {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .make-min-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .make-min-deposit {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--section-message-text);
+    margin-bottom: -5px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .text-button-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .text-button-deposit {
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.15px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div .img-deposit,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div .img-deposit {
+    padding-right: 12px;
+  }
+  .bonuses-popover .popover-conteiner-vip-content .diposit-button-conteiner div ion-button,
+  .bonuses-modal .popover-conteiner-vip-content .diposit-button-conteiner div ion-button {
+    width: 134px;
+    height: 50px;
+    --border-radius: 8px;
+  }
+}
+.bonuses-popover .popover-conteiner-tickets-content,
+.bonuses-modal .popover-conteiner-tickets-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner,
+.bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner {
+  margin-bottom: 16px;
+  align-items: center;
+  width: 304px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets,
+.bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets,
+.bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+  font-size: 24px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: right;
+  color: var(--green);
+}
+.bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner,
+.bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner {
+  margin-bottom: 24px;
+  width: 304px;
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus,
+.bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  align-self: stretch;
+  letter-spacing: 0.15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 11px;
+}
+.bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span,
+.bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner ion-button,
+.bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+  --box-shadow: none;
+  width: 149px;
+  height: 50px;
+  --border-radius: 8px;
+}
+.bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets,
+.bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+  text-transform: capitalize;
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--btn-text-modal);
+}
+@media  ( min-width: 3400px )  {
+  .bonuses-popover .popover-conteiner-tickets-content,
+  .bonuses-modal .popover-conteiner-tickets-content {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner {
+    width: 606px;
+    height: 124px;
+    padding: 32px;
+    margin-bottom: 23px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+    line-height: 38px;
+    font-size: 32px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+    font-size: 48px;
+    line-height: 60px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner {
+    margin-bottom: 48px;
+    width: 606px;
+    height: 290px;
+    align-items: center;
+    padding: 32px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 38px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner ion-button,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+    --box-shadow: none;
+    width: 298px;
+    height: 100px;
+    --border-radius: 14px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+@media  ( max-width: 768px )  {
+  .bonuses-popover .popover-conteiner-tickets-content,
+  .bonuses-modal .popover-conteiner-tickets-content {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner {
+    margin-bottom: 16px;
+    height: 62px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner {
+    min-height: 138px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner ion-button,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+    width: 149px;
+    height: 50px;
+    --border-radius: 8px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+@media  ( max-width: 450px )  {
+  .bonuses-popover .popover-conteiner-tickets-content,
+  .bonuses-modal .popover-conteiner-tickets-content {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner {
+    width: calc( 100vw - 32px );
+    margin-bottom: 16px;
+    height: 60px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .name-tickets {
+    line-height: 20px;
+    font-size: 14px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .count-tickets-conteiner .count-tickets {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner {
+    align-items: center;
+    width: calc( 100vw - 32px );
+    min-height: 138px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .first-yarus span {
+    color: var(--section-message-text);
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner ion-button,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner ion-button {
+    width: 149px;
+    height: 50px;
+    --border-radius: 8px;
+  }
+  .bonuses-popover .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets,
+  .bonuses-modal .popover-conteiner-tickets-content .play-game-button-conteiner .text-button-tickets {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+.bonuses-popover .popover-conteiner-freespin-content,
+.bonuses-modal .popover-conteiner-freespin-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner,
+.bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  gap: 24px;
+  width: 304px;
+  height: 66px;
+  background-color: var(--modal-header-bg);
+}
+.bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins,
+.bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: var(--section-message-text);
+}
+.bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets,
+.bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets {
+  font-size: 24px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: right;
+  color: var(--green);
+}
+@media  ( min-width: 3400px )  {
+  .bonuses-popover .popover-conteiner-freespin-content,
+  .bonuses-modal .popover-conteiner-freespin-content {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner {
+    margin-bottom: 48px;
+    padding: 32px;
+    gap: 40px;
+    width: 606px;
+    height: 124px;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets {
+    font-size: 48px;
+    line-height: 60px;
+  }
+}
+@media  ( max-width: 768px )  {
+  .bonuses-popover .popover-conteiner-freespin-content,
+  .bonuses-modal .popover-conteiner-freespin-content {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner {
+    margin-bottom: 24px;
+    height: 62px;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media  ( max-width: 450px )  {
+  .bonuses-popover .popover-conteiner-freespin-content,
+  .bonuses-modal .popover-conteiner-freespin-content {
+    align-items: center;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner {
+    width: calc( 100vw - 32px );
+    margin-bottom: 24px;
+    height: 62px;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .name-free-spins {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets,
+  .bonuses-modal .popover-conteiner-freespin-content .count-freespin-conteiner .count-tickets {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media  ( max-width: 768px )  {
+  .bonuses-popover,
+  .bonuses-modal {
+    --max-height: 95vh;
+  }
+  .bonuses-popover .info-content,
+  .bonuses-modal .info-content {
+    padding: 0px;
+  }
+  .bonuses-popover .headers-bonuses-popover,
+  .bonuses-modal .headers-bonuses-popover {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media  ( max-width: 450px )  {
+  .bonuses-popover,
+  .bonuses-modal {
+    --width: 100vw;
+    --max-height: 85vh;
+  }
+  .bonuses-popover .headers-bonuses-popover,
+  .bonuses-modal .headers-bonuses-popover {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .bonuses-popover .info-content.info-content-modal,
+  .bonuses-modal .info-content.info-content-modal {
+    border-radius: 0px;
+    box-shadow: none;
+  }
+}
+@media  ( min-width: 3400px )  {
+  .bonuses-popover,
+  .bonuses-modal {
+    --width: 672px;
+    --height: "Inherit";
+    --border-radius: 13px;
+  }
+  .bonuses-popover .info-content.info-content-modal,
+  .bonuses-modal .info-content.info-content-modal {
+    padding: 0px;
+  }
+  .bonuses-popover .img-conrainer,
+  .bonuses-modal .img-conrainer {
+    width: 100%;
+    height: 600px;
+  }
+  .bonuses-popover .img-conrainer img,
+  .bonuses-modal .img-conrainer img {
+    margin-top: -140px;
+  }
+  .bonuses-popover ion-header,
+  .bonuses-modal ion-header {
+    padding: 24px 30px 24px 30px;
+    height: 92px;
+    --border-radius: 0px;
+  }
+  .bonuses-popover .headers-bonuses-popover,
+  .bonuses-modal .headers-bonuses-popover {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}

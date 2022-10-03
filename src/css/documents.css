@@ -1,0 +1,255 @@
+.terms.width-container {
+  margin: 30px auto;
+}
+.terms * {
+  font-family: 'Rubik', sans-serif !important;
+  /* font-size: initial !important; */
+  color: var(--font-default) !important;
+}
+.terms:not(.faq) * {
+  font-size: initial !important;
+}
+.terms h3 {
+  font-size: 24px !important;
+}
+.gmnoprint,
+.gm-fullscreen-control {
+  display: none;
+}
+.point-map {
+  background-color: transparent !important;
+  position: relative;
+  /* left: -40px; */
+  width: 5px !important;
+  height: 5px !important;
+}
+.point-map::before {
+  content:'';
+  top: -50px;
+  left: -59px;
+  width: 120px;
+  height: 40px;
+  display: block;
+  position: absolute;
+  background: url('../images/logo-link-header.svg');
+  background-color: #fff;
+  border-radius: 5px;
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.point-map:after {
+    content:'';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #FFFFFF;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent;
+}
+.terms .paragraph {
+  max-height: 60px;
+  transition: .3s;
+  overflow: hidden;
+  display: block;
+  box-shadow: var(--pr-card-bsh);
+  border-radius: 3px;
+  background: var(--account-container-body);
+  padding: 0 25px;
+  padding-right: 65px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.terms.faq .paragraph {
+  max-height: 75px;
+}
+.terms .paragraph-left {
+  height: 75px;
+  cursor: pointer;
+  align-items: center;
+}
+.terms .paragraph-left svg {
+  margin-right: 20px;
+  fill: var(--green);
+}
+.terms.faq .h3-smaller {
+  margin: 0;
+}
+.terms .paragraph .h3-smaller::after {
+  display: block;
+  content: '';
+  width: 28px;
+  height: 28px;
+  background-image: var(--arrow-st);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 11px;
+  border-radius: 50%;
+  border: 1px solid var(--arrow-st-br);
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transition: .3s;
+}
+.terms.faq .paragraph .h3-smaller::after {
+  top: 22px;
+}
+.terms.faq .paragraph-content {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.terms.faq .paragraph-content a {
+  color: var(--green) !important;
+}
+.terms .paragraph.opened .h3-smaller::after {
+  transform: rotate(180deg);
+  transition: .3s;
+}
+
+.terms .paragraph.opened {
+  max-height: 100%;
+  max-height: 4000px;
+}
+.terms .paragraph h6 img {
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  filter: grayscale();
+}
+.terms .h3-smaller {
+  font-size: 16px !important;
+  margin: 22px 0;
+  cursor: pointer;
+}
+.terms .paragraph h6 img,
+.terms .paragraph h6 a {
+  vertical-align: middle;
+}
+.terms .paragraph ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.terms .paragraph ul a {
+  color: var(--green) !important;
+}
+.map-general {
+  height: 400px;
+}
+.documentswelcome-bonus .paragraph ul{
+  padding-left: 20px;
+}
+
+.ios-app-setup-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.ios-app-setup-content {
+  width: 100%;
+  height: 410px;
+  padding: 40px 35px;
+  margin-top: 160px;
+  background: var(--ios-setup-content-bg);
+  border-radius: 3px;
+  position: relative;
+}
+
+.ios-app-setup-content-left {
+  width: 50%;
+  /* height: 100%; */
+  flex-direction: column;
+  z-index: 5;
+}
+
+.ios-app-setup-content-steps {
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step-item {
+  margin-bottom: 5px;
+  padding: 6px 24px;
+  border-radius: 20px;
+  border: 1px solid var(--green);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.step-item.active {
+  background: var(--green);
+  color: #FFFFFF !important;
+}
+
+.ios-app-setup-content-title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.ios-app-setup-content-description {
+  margin-bottom: auto;
+  line-height: 24px;
+}
+
+.ios-app-setup-content-btns {
+  margin-top: 10px;
+}
+
+.ios-app-setup-content-btns .save-btn {
+  margin: 0;
+}
+
+.ios-app-setup-content-btns .save-btn p {
+  color: #FFFFFF !important;
+}
+
+.ios-app-setup-content-btns .cancel-btn {
+  margin-left: 0;
+}
+
+body:not(.dark) .ios-app-setup-content-btns .cancel-btn:hover p {
+  color: var(--green) !important;
+}
+
+.ios-app-setup-content-right {
+  width: 648px;
+  height: 595px;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -120px;
+  bottom: -20px;
+  background-size: contain;
+}
+
+.ios-app-setup-content-right.dark.first {
+  background-image: url(../images/bg/ios/iphone-step1.png);
+}
+
+.ios-app-setup-content-right.dark.second {
+  background-image: url(../images/bg/ios/iphone-step2.png);
+}
+
+.ios-app-setup-content-right.dark.third {
+  background-image: url(../images/bg/ios/iphone-step3.png);
+}
+
+.ios-app-setup-content-right.first {
+  background-image: url(../images/bg/ios/iphone-step1-light.png);
+}
+
+.ios-app-setup-content-right.second {
+  background-image: url(../images/bg/ios/iphone-step2-light.png);
+}
+
+.ios-app-setup-content-right.third {
+  background-image: url(../images/bg/ios/iphone-step3-light.png);
+}

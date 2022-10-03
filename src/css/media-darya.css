@@ -1,0 +1,698 @@
+@media screen and (max-width: 1140px) {
+   /* Premium */
+   .premium-vertical-container, .premium-horizontal-container {
+      display: grid;
+      grid-template-columns: repeat(2, min(257px));
+      justify-content: center;
+      grid-gap: 10px !important;
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+   .premium-horizontal-container .premium-money-container, .premium-horizontal-container .premium-checklist {
+      padding: 0;
+   }
+   .premium-horizontal-container .premium-checklist {
+      -moz-columns: 1;
+      columns: 1;
+   }
+   .premium-vertical-container {
+      margin: 0 auto 10px;
+   }
+   .premium-horizontal-container {
+      margin: 0 auto 50px;
+   }
+   .premium-horizontal-block {
+      flex-direction: column;
+      margin-bottom: 0;
+   }
+   .premium-horizontal-left {
+      margin-bottom: 23px;
+      border-bottom: 2px solid var(--pr-card-br);
+   }
+   .premium-horizontal-right {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+   .premium-horizontal-container .premium-checklist {
+      padding-left: 30px;
+   }
+   .premium-horizontal-title {
+      min-width: 100%;
+      padding: 25px 80px 12px 0;
+      text-align: left;
+   }
+   .special-benefits-container {
+      padding: 32px;
+   }
+   .premium-platinum .premium-horizontal-left, .premium-diamond .premium-horizontal-left, .premium-exclusive .premium-horizontal-left {
+      background-image: none;
+   }
+   .premium-platinum, .premium-diamond, .premium-exclusive {
+      background-repeat: no-repeat;
+   }
+   .premium-platinum {
+      background-image: url(../images/premium-icons/premium-platinum.svg);
+      background-position: right 30px top 0;
+   }
+   .premium-diamond {
+      background-image: url(../images/premium-icons/premium-diamond.svg);
+      background-position: right 30px top 20px;
+   }
+   .premium-exclusive {
+      background-image: url(../images/premium-icons/premium-exclusive.svg);
+      background-position: right 30px top 13px;
+   }
+}
+
+@media screen and (max-width: 1024px) {
+   .img-container {
+      display: none;
+   }
+   .mod-window::part(content) {
+      max-width: 475px;
+   }
+   .mod-container .login-btn {
+      margin-top: 110px;
+   }
+   .register-modal::part(content) {
+      min-height: 750px;
+   }
+   /* Cookie */
+   .cookie-window::part(content) {
+      max-width: 725px;
+   }
+   .mod-confirm .modal-data {
+      padding: 35px;
+      padding-bottom: 0;
+   }
+   .mod-confirm-wrapper .btn {
+      margin-right: 35px;
+   }
+   /* Account Details  */
+   .account-header-tab .img-center-account {
+      height: 24px;
+      background-size: 20px;
+      margin-top: -12px;
+      margin-bottom: 0;
+   }
+   .account-container-header:not(.hist-header) .account-header-tab p {
+      font-size: 14px;
+   }
+   .account-fields-container {
+      background: none;
+   }
+   /* Personal Info */
+   .warning-message {
+      left: 30px;
+      top: 18px;
+      display: none;
+      /* мешает */
+   }
+   /* Games Limit */
+   .account-fields-container.games-limit {
+      flex-direction: column;
+   }
+   .games-limit-right {
+      margin-left: 0;
+      margin-top: 54px;
+   }
+   /* Multiple Logins */
+   .device-title div:first-child {
+      font-size: 18px;
+   }
+   /* Verify Account */
+   .verification-steps {
+      flex-direction: column;
+   }
+   .step-two {
+      margin-top: 45px;
+   }
+   /* Statistic */
+   .stats p {
+      font-size: 20px;
+   }
+   .pie-container {
+      padding: 0 8px;
+   }
+   /* Balance */
+   .account-header-tab .img-center-balance {
+      height: 24px;
+      background-size: auto 20px;
+      margin-top: -12px;
+      margin-bottom: 0;
+   }
+   .balance-fields-container {
+      background: none;
+   }
+   .loan-request-header {
+      font-size: 20px;
+   }
+   .balance-fund-top {
+      flex-direction: column;
+   }
+   .balance-level-compliance, .balance-fund-bottom {
+      margin-top: 35px;
+   }
+   .balance-title {
+      font-size: 20px;
+      margin-bottom: 0;
+   }
+   /* History */
+   .img-center-history {
+      height: 24px;
+      background-size: auto 20px;
+      margin-top: -12px;
+      margin-bottom: 0;
+   }
+   .hist-header.account-container-header p {
+      margin-top: 8px;
+   }
+   /* Static Pages */
+   .terms * {
+      font-size: 14px !important;
+   }
+   .terms span {
+      font-size: 14px !important;
+   }
+   .terms h3 {
+      font-size: 20px !important;
+   }
+   /* Providers */
+   .providers-block {
+      grid-gap: 20px !important;
+   }
+}
+
+@media screen and (max-width: 767px) {
+   /* Login */
+   .mod-window::part(content) {
+      min-height: 430px;
+      max-width: 375px;
+   }
+   .tournament-detail-cms {
+      width: 100%;
+      margin: 0 auto;
+   }
+   .modal-data, .mod-confirm .modal-data {
+      padding-left: 18px;
+      padding-right: 18px;
+   }
+   .modal-title {
+      margin-top: 30px;
+      margin-bottom: 3px;
+      font-size: 12px;
+   }
+   .modal-description {
+      font-size: 18px;
+      margin-bottom: 35px;
+   }
+   .input-container {
+      margin-top: 11px;
+   }
+   .input-container>span {
+      font-size: 11px;
+      line-height: normal;
+   }
+   .input-container input, ion-select, .field.country {
+      height: 40px;
+      padding-left: 13px;
+      font-size: 12px;
+      margin-top: 4px;
+   }
+   .input-container input::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      font-size: 12px;
+   }
+   .input-container input::-moz-placeholder {
+      /* Firefox 19+ */
+      font-size: 12px;
+   }
+   .input-container input:-ms-input-placeholder {
+      /* IE 10+ */
+      font-size: 12px;
+   }
+   .input-container input:-moz-placeholder {
+      /* Firefox 18- */
+      font-size: 12px;
+   }
+   ion-select {
+      font-size: 12px;
+   }
+   .remember-me {
+      margin-top: 15px;
+   }
+   .remember-me span, .forgot-password {
+      font-size: 12px;
+   }
+   .mod-container .btn {
+      height: 40px;
+      font-size: 13px;
+   }
+   .mod-container .login-btn {
+      margin-top: 48px;
+   }
+   .mod-container .forgot-btn {
+      margin-top: 75px;
+   }
+   .modal-question-mob {
+      font-size: 12px;
+      color: #979797;
+   }
+   /* Forgot pass */
+   .forgot-disclaimer {
+      font-size: 11px;
+   }
+   /* Sign Up */
+   .register-modal::part(content) {
+      min-height: 530px;
+   }
+   .promo-field {
+      margin-bottom: -70px;
+   }
+   .progress-bar {
+      order: -1;
+      margin-top: 17px;
+   }
+   .register-modal .modal-title {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+   .register-modal .modal-description {
+      margin-bottom: 0;
+      line-height: normal;
+   }
+   .flag-select__options {
+      top: 32px;
+   }
+   .flag-select__option.flag-select__option--placeholder {
+      font-size: 12px;
+   }
+   .field.country button {
+      padding-left: 0;
+   }
+   .input-container .date-container ion-select {
+      width: 33%;
+   }
+   ion-select.gender, .deposite-container .input-container.input-lang {
+      width: 100%;
+   }
+   .number-container .ccode {
+      max-width: 86px;
+   }
+   input.zcode {
+      max-width: 105px;
+   }
+   .deposite-container .input-container:not(.input-lang), .deposite-container .input-container.deposit-daily {
+      margin-left: 0;
+      margin-right: 0;
+      width: 48%;
+   }
+   .deposite-container .input-container.deposit-currency {
+      margin-right: 1%;
+   }
+   .register-modal .btn {
+      margin-top: 0;
+   }
+   .btn-back span {
+      font-size: 13px;
+   }
+   .modal-buttons .btn {
+      max-width: 132px;
+   }
+   .bit.btn.only-btn {
+      margin-top: 68px;
+   }
+   .modal-buttons {
+      margin-top: 25px;
+   }
+   .deposite-buttons {
+      margin-top: 11px;
+   }
+   .policy-checkbox {
+      margin-top: 7px;
+   }
+   .deposite-container+.policy-checkbox {
+      margin-top: 13px;
+   }
+   .policy-checkbox span {
+      font-size: 10px;
+      line-height: normal;
+   }
+   /* Cookie */
+   .cookie-window::part(content) {
+      min-height: 300px;
+   }
+   .modal-content {
+      font-size: 12px;
+   }
+   .cookie-window .modal-description {
+      margin-bottom: 50px;
+   }
+   .mod-confirm-wrapper .btn {
+      margin-right: 18px;
+   }
+   /* Account Details */
+   .account-container-header {
+      height: auto;
+      flex-wrap: wrap;
+      box-shadow: none;
+   }
+   .account-header-tab {
+      min-width: 33.3333%;
+      height: 32px;
+      margin-bottom: 20px;
+      background: var(--header-background);
+   }
+   .account-header-tab:nth-child(2n+1) {
+      border-radius: 3px 0 0 3px;
+   }
+   .account-header-tab:nth-child(2n) {
+      border-radius: 0 3px 3px 0;
+   }
+   .account-container-header .account-header-tab p {
+      font-size: 11px !important;
+   }
+   /* Personal Info */
+   .account-container {
+      margin-bottom: 0;
+   }
+   .account-header-tab .img-center-account {
+      height: 22px;
+      background-size: 18px;
+      margin-top: -10px;
+   }
+   .account-fields-container, .account-verification, .account-closure {
+      min-height: auto;
+      padding: 18px 30px;
+   }
+   .account-table {
+      min-height: auto;
+      padding: 0;
+   }
+   .personal-footer {
+      height: auto;
+   }
+   .account-title {
+      font-size: 18px;
+      margin-bottom: 20px;
+   }
+   .games-limit .account-title {
+      max-width: 350px;
+      margin: 0 auto 20px;
+   }
+   .account-container .deposite-container {
+      margin: 0 auto;
+   }
+   .account-fields-container .input-container, .balance-fields-container .input-container, .deposites-container {
+      margin-left: auto;
+      margin-right: auto;
+   }
+   .user-image, .pick-avatar-default {
+      margin: 0 auto;
+      order: -1;
+      text-align: center
+   }
+   .account-footer-btns {
+      padding: 25px 30px;
+      flex-wrap: wrap;
+   }
+   .change-password {
+      order: 3;
+      width: 100%;
+      margin-left: 0;
+      margin-top: 10px;
+   }
+   .cancel-btn, .save-btn, .save-btn.save-psword {
+      max-width: 100px;
+      min-width: 48.5%;
+      margin-left: 0;
+   }
+   .cancel-btn {
+      margin-right: 3%;
+   }
+   .save-btn {
+      margin-right: 0;
+   }
+   .games-limit>div {
+      max-width: none;
+   }
+   .games-limit-right {
+      margin-top: 28px;
+   }
+   .games-limit-right-bottom .account-title {
+      margin-top: 28px;
+   }
+   /* Multiple Logins */
+   /* .account-table {
+      overflow-x: auto;
+   }
+   .account-table th {
+      font-size: 14px;
+   }*/
+   .account-table-multiple thead {
+      display: none;
+   }
+   .account-table-multiple tr {
+      display: block;
+      position: relative;
+      padding-top: 5px;
+      background-color: var(--table-bg);
+      border-bottom: 4px solid var(--header-background);
+   }
+   .account-table-multiple td {
+      display: block;
+      width: 100%;
+      padding: 5px 45% 5px 15px !important;
+      border-bottom: none;
+   }
+   .account-table-multiple td.current-device {
+      display: none;
+   }
+   .account-table-multiple td.action-btn {
+      padding: 0 !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+      max-width: 40%;
+      height: 100%;
+   }
+   .action-btn div {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #E24F4F;
+      color: #fff;
+      border-radius: 0;
+   }
+   .device-title div:first-child {
+      font-size: 15px;
+   }
+   .device-title {
+      font-size: 13px;
+   }
+   .address-title, .action-btn div {
+      font-size: 14px;
+   }
+   /* Verify Account */
+   .account-description {
+      font-size: 13px;
+   }
+   .step-title {
+      font-size: 14px;
+   }
+   .account-verification {
+      margin-bottom: 20px;
+   }
+   .account-verification .account-footer-btns {
+      width: calc(100% + 60px);
+      margin-left: -30px;
+   }
+   .thumbs-container {
+      width: 100% !important;
+   }
+   /*Account Closure*/
+   .account-closure-content p {
+      font-size: 13px;
+   }
+   .save-btn.delete {
+      min-width: 100%;
+      margin-left: 0;
+   }
+   /* Balance */
+   .account-header-tab .img-center-balance {
+      height: 22px;
+      background-size: auto 18px;
+      margin-top: -10px;
+      margin-bottom: 0;
+   }
+   .balance-fields-container {
+      min-height: auto;
+      padding: 18px 30px;
+      flex-direction: column;
+   }
+   .balance-fund-left {
+      margin-right: 0;
+   }
+   .deposites-container {
+      padding-left: 18px;
+      padding-right: 18px;
+   }
+   .balance-level-compliance, .balance-fund-bottom {
+      margin-top: 25px;
+   }
+   .deposite-line div {
+      font-size: 14px;
+   }
+   .deposite-line {
+      padding-bottom: 15px;
+   }
+   .loan-request-header {
+      max-width: 350px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 25px;
+   }
+   .balance-title {
+      font-size: 18px;
+   }
+   /* Statisic */
+   .statistics-page {
+      padding: 23px 17px;
+   }
+   .pie-container {
+      width: 100%;
+      margin-bottom: 50px;
+      padding: 0;
+   }
+   .stats p {
+      font-size: 18px;
+   }
+   .stats .save-btn {
+      display: none;
+   }
+   .pies-container .pie {
+      min-width: 100%;
+   }
+   /* History */
+   .account-header-tab {
+      min-width: 50%;
+   }
+   .account-header-tab .img-center-history {
+      height: 22px;
+      background-size: auto 18px;
+      margin-top: -10px;
+      margin-bottom: 0;
+   }
+   .hist-header.account-container-header p {
+      margin-top: 0;
+   }
+   /* Premium */
+   .premium-vertical-title, .premium-horizontal-title {
+      font-size: 18px;
+   }
+   .premium-checklist li {
+      font-size: 14px;
+   }
+   .special-benefits-container {
+      padding: 18px;
+   }
+   /* Premium collapse*/
+   .premium-vertical-container, .premium-horizontal-container {
+      grid-template-columns: repeat(auto-fill, min(257px));
+   }
+   .premium-vertical-title, .premium-horizontal-title {
+      display: flex;
+      align-items: center;
+   }
+   .premium-vertical-title img, .premium-horizontal-title img {
+      display: inherit;
+      margin-left: 8px;
+      transition: .3s;
+   }
+   .premium-vertical-block.open .premium-vertical-title img, .premium-horizontal-block.open .premium-horizontal-title img {
+      transform: rotate(180deg);
+   }
+   /* .premium-vertical-title span,
+   .premium-horizontal-title span {
+      width: 12px;
+      height: 100%;
+      position: relative;
+   } */
+   /* .premium-vertical-title span::after,
+   .premium-horizontal-title span::after {
+      content: '';
+      width: 12px;
+      height: 7px;
+      position: absolute;
+      top: 7px;
+      left: 8px;
+      background-image: url('../images/arrow-up.svg');
+      background-repeat: no-repeat;
+      transition: .3s;
+   } */
+   .premium-vertical-block .premium-vertical-bottom, .premium-horizontal-block .premium-horizontal-right {
+      display: none;
+      /* opacity: 0; */
+      /* height: 0; */
+      transition: .3s;
+   }
+   .premium-vertical-block.open .premium-vertical-bottom, .premium-horizontal-block.open .premium-horizontal-right {
+      display: block;
+      /* opacity: 1; */
+      /* height: auto; */
+   }
+   /* .premium-vertical-block.open .premium-vertical-title span::after,
+   .premium-horizontal-block.open .premium-horizontal-title span::after {
+      transform: rotate(180deg);
+   } */
+   .premium-vertical-block:not(.open) .premium-vertical-title, .premium-horizontal-block:not(.open) .premium-horizontal-title {
+      padding-bottom: 0;
+   }
+   .premium-vertical-top, .premium-horizontal-left {
+      border-bottom: none;
+   }
+   .premium-vertical-block.open .premium-vertical-top, .premium-horizontal-block.open .premium-horizontal-left {
+      border-bottom: 2px solid var(--pr-card-br);
+   }
+   .premium-horizontal-block:not(.open) .premium-horizontal-left {
+      margin-bottom: 0;
+   }
+   /* Static pages */
+   .terms * {
+      font-size: 14px !important;
+   }
+   .terms h3 {
+      font-size: 18px !important;
+   }
+   .terms span {
+      font-size: 12px !important;
+   }
+   .terms .h3-smaller {
+      font-size: 14px;
+      margin: 16px 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+   }
+   .terms .paragraph {
+      padding: 0 38px 0 18px;
+      max-height: 50px;
+   }
+   .terms .paragraph .h3-smaller::after {
+      border: none;
+      top: 10px;
+      right: 5px;
+   }
+   .terms p img {
+      max-width: 100%;
+      height: auto;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .mod-confirm-wrapper .btn {
+      width: auto;
+      margin: 45px 18px 0;
+   }
+}

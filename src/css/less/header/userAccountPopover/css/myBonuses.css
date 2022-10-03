@@ -1,0 +1,27 @@
+.user-popover .user-menu-popover-bonus-item .title-item .count-item {
+  color: var(--grey);
+}
+.user-popover .user-menu-popover-bonus-item .rotate90 {
+  transform: rotate(90deg);
+}
+.user-popover .user-menu-popover-bonus-item .rotate0 {
+  transform: rotate(0deg);
+}
+.vip-container {
+  justify-content: space-between;
+}
+.vip-container .item-right {
+  display: flex;
+  line-height: 23px;
+}
+.vip-container .vip-item .vip-active {
+  color: #268a00;
+}
+.vip-container .vip-item .vip-no-active {
+  color: #eb5757;
+}
+@media  ( min-width: 3400px )  {
+  .vip-container .item-right {
+    line-height: 46px;
+  }
+}

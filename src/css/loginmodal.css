@@ -1,0 +1,252 @@
+.forgot-disclaimer {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8B9A96;
+  width: 100%;
+  max-width: 350px;
+  margin: 10px auto 40px;
+}
+
+.restorebtn {
+  margin-top: 20px !important;
+}
+
+.fdescription {
+  margin-bottom: 5px !important;
+}
+
+.mod-window::part(content) {
+  width: 100%;
+  max-width: 885px;
+  min-height: 575px;
+  height: auto;
+  border-radius: 4px;
+  background: transparent;
+  margin: 25px;
+}
+
+.mod-container {
+  background: var(--modal-bg);
+  width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  margin-left: -1px;
+  width: 100%;
+  min-height: 576px;
+  max-width: 410px;
+  background: url(../images/bg/login-img.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-wrapper .ion-page {
+  background: var(--modal-bg);
+}
+
+.absolute-close-modal {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  width: 39.43px;
+  height: 39.43px;
+  background: var(--modal-close);
+  border-radius: 0px 4px;
+}
+
+.absolute-close-modal>* {
+  fill: var(--modal-close-cross);
+}
+.absolute-close-modal:hover svg {
+  fill: var(--green);
+}
+
+.modal-data {
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+
+.modal-title {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  font-weight: normal;
+  margin-top: 50px;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--green);
+}
+
+.modal-description {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--font-default);
+}
+
+.input-container {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 20px;
+  flex-direction: column;
+  position: relative;
+}
+
+.mod-container .input-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container input {
+  width: 100%;
+  height: 50px;
+  /* font-size: 14px; */
+  color: var(--font-default);
+  background: transparent;
+  border: 1px solid var(--grey);
+  outline: none;
+  border-radius: 8px;
+  margin-top: 5px;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+.input-container input:hover {
+  border: 1px solid var(--green);
+}
+
+.input-container input:focus {
+  border: 2px solid var(--green);
+}
+
+.input-container input::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  /* font-size: 14px; */
+  color: var(--input-placeholder);
+}
+
+.input-container input::-moz-placeholder {
+  /* Firefox 19+ */
+  /* font-size: 14px; */
+  color: var(--input-placeholder);
+}
+
+.input-container input:-ms-input-placeholder {
+  /* IE 10+ */
+  /* font-size: 14px; */
+  color: var(--input-placeholder);
+}
+
+.input-container input:-moz-placeholder {
+  /* Firefox 18- */
+  /* font-size: 14px; */
+  color: var(--input-placeholder);
+}
+
+.input-container > span {
+  color: var(--modal-label);
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.forgot-password {
+  color: var(--green);
+  margin: 0;
+  margin-top: 1px;
+  margin-left: auto;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.remember-me {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.remember-me span {
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 7.5px;
+  margin-top: 1px;
+  color: var(--font-default);
+}
+
+ion-checkbox {
+  --border-radius: 5px;
+  --border-color: var(--grey);
+  --background-checked: var(--grey);
+  --background: var(--ion-checkbox-bg);
+  --border-color-checked: var(--grey);
+}
+
+.mod-container .login-btn {
+  width: 100%;
+  max-width: 350px;
+  margin: 135px auto 0;
+}
+
+.mod-container .btn.login-btn:hover {
+  background: var(--green-btn-hover);
+}
+
+.mod-container .forgot-btn {
+  width: 100%;
+  max-width: 350px;
+  margin: 35px auto 0;
+}
+
+.logout-container {
+  justify-content: center;
+}
+
+.logout-container .modal-description {
+  text-align: center;
+}
+
+.logout-container .login-btn {
+  margin-top: 25px;
+}
+
+@media (min-width: 1025px) {
+  .modal-question-mob, .modal-attention-mob {
+    display: none;
+  }
+}
+
+.modal-question-mob {
+  min-height: 40px;
+  background-color: var(--cancel-btn-bg);
+  padding: 13px 25px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.modal-attention-mob {
+  padding: 10px 20px;
+  font-size: 11px;
+}
+
+.modal-question-mob a {
+  color: var(--green);
+}

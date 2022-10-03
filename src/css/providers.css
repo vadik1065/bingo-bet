@@ -1,0 +1,94 @@
+.providers-page {
+  min-height: 100%
+}
+.providers-block {
+  display: grid;
+  grid-template-rows: repeat(1,1fr);
+  grid-template-columns: repeat(auto-fill, minmax(245px,1fr));
+  /* grid-template-columns: repeat(auto-fill, minmax(139px, 1fr)); */
+  grid-gap: 20px !important;
+  margin-bottom: 25px;
+}
+.page-title.providers-games-title {
+  /* padding-top: 40px; */
+  margin-top: 40px;
+  text-transform: capitalize;
+}
+.prov-card {
+  flex: 0 1 25%;
+  /* max-width: 245px; */
+  box-shadow: var(--pr-card-bsh);
+  border-radius: 3px;
+  margin: 1px;
+  position: relative;
+  cursor: pointer;
+}
+.providers-page .back-button {
+  margin-top: 35px;
+}
+.list-provs {
+  margin-top: 40px;
+}
+.prov-card .prov-img {
+  height: 174px;
+  background-color: var(--prov-img);
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border: 1px solid var(--prov-img);
+  border-bottom: none;
+  -webkit-animation: moverec;
+          animation: moverec;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  transition: .3s;
+}
+.prov-card .prov-discription {
+  background: var(--pr-card-bg);
+  padding: 22px 13px;
+  font-weight: 500;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.prov-card .prov-count {
+  font-size: 14px;
+  opacity: .5;
+  margin-top: 7px;
+}
+.prov-card .playnow-btn {
+  height: calc(100% - 174px);
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.prov-card:hover .playnow-btn {
+  opacity: 1;
+}
+.prov-card:hover img {
+  -webkit-filter: none !important;
+          filter: none !important;
+}
+.prov-card:hover .prov-img {
+  border-color: var(--green);
+  border-bottom: none;
+}
+/*.prov-card:hover .prov-discription {
+  background: var(--green);
+}*/
+.prov-card:hover .prov-discription > div {
+  color: var(--pr-card-bg);
+}
+.prov-img img {
+  width: 55%;
+  height: auto;
+  transition: .3s;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+    opacity: .7;
+}
+.dark .prov-img img {
+  -webkit-filter: contrast(.1) grayscale(1);
+          filter: contrast(.1) grayscale(1);
+}

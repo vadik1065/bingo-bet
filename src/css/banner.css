@@ -1,0 +1,33 @@
+.carousel .control-dots {
+  position: initial;
+  margin-top: 5px;
+}
+.carousel .control-dots .dot {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: unset;
+  width: 23px;
+  height: 3px;
+  background: var(--banner-dot);
+  opacity: 1;
+  outline: none;
+}
+.carousel .control-dots .dot.selected {
+  background: var(--green);
+  -webkit-box-shadow: var(--dot-box-shadow);
+          box-shadow: var(--dot-box-shadow)
+}
+.carousel-status {
+  display: none;
+}
+.carousel-root:not(.levels-carousel) .carousel img {
+  border: none !important;
+  border-radius: 3px;
+  height: 100%
+}
+.carousel .slide {
+  border: none;
+  border-color: transparent;
+  border-radius: 3px;
+  margin-bottom: -1px;
+}

@@ -1,0 +1,470 @@
+.account-header-tab .img-center-balance {
+   /* width: 35px; */
+   height: 35px;
+   margin: 0 auto;
+   display: flex;
+   margin-top: -15px;
+   margin-bottom: 5px;
+   align-items: center;
+   transition: .3s;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.deposites-container .red *{
+  color:var(--red) !important;
+}
+.before-loan {
+  margin-left: 4px;
+}
+.green {
+  color: var(--green)
+}
+.crypto {
+  text-transform: capitalize;
+}
+.qr {
+  margin-top: 0px;
+}
+.pointer {
+  /* cursor: pointer; */
+  transition: .3s;
+}
+/* .pointer:hover {
+  text-decoration: underline;
+} */
+.account-header-tab .img-center-balance {
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.account-header-tab:first-child .img-center-balance{
+   background-image: var(--deposit-img);
+}
+.account-header-tab:nth-child(2) .img-center-balance {
+   background-image: var(--exchange-img);
+}
+.account-header-tab:nth-child(3) .img-center-balance {
+   background-image: var(--withdraw-img);
+}
+.account-header-tab:nth-child(4) .img-center-balance {
+   background-image: var(--personal-img);
+}
+.account-header-tab:nth-child(5) .img-center-balance {
+   background-image: var(--loan-img);
+}
+.account-header-tab:nth-child(6) .img-center-balance {
+   background-image: var(--funds-img);
+}
+.active.account-header-tab:first-child .img-center-balance {
+   background-image: url(../images/balance-tabs/deposit-active.png);
+}
+.active.account-header-tab:nth-child(2) .img-center-balance {
+   background-image: url(../images/balance-tabs/exchange-active.png);
+}
+.active.account-header-tab:nth-child(3) .img-center-balance {
+   background-image: url(../images/balance-tabs/withdraw-active.png);
+}
+.active.account-header-tab:nth-child(4) .img-center-balance {
+   background-image: url(../images/balance-tabs/personal-active.png);
+}
+.active.account-header-tab:nth-child(5) .img-center-balance {
+   background-image: url(../images/balance-tabs/loan-active.png);
+}
+.active.account-header-tab:nth-child(6) .img-center-balance {
+   background-image: url(../images/balance-tabs/funds-active.png);
+}
+/*Deposit Money*/
+.balance-fields-container {
+   min-height: 580px;
+   padding: 25px 37px;
+   background: url(../images/sack.svg) right bottom 70px no-repeat;
+   position: relative;
+}
+.balance-fields-container .input-container:first-child {
+   margin-top: 0;
+}
+.balance-fields-wrapper {
+   width: 540px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.balance-fields-wrapper:first-child {
+   margin-bottom: 40px;
+}
+.balance-fields-wrapper .input-container.select {
+   margin-right: 40px;
+}
+.balance-fields-wrapper .input-container.comission {
+   width: 150px;
+   margin-top: 0;
+}
+.balance-fields-wrapper .input-container.address {
+   width: 100%;
+   max-width: inherit;
+   margin-bottom: 30px;
+}
+.input-container .body-field {
+   width: 100%;
+   height: 50px;
+   margin-top: 5px;
+   padding: 0 15px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background: var(--user-image-bg);
+   border-radius: 5px;
+   font-size: 16px;
+   line-height: 19px;
+}
+.input-container .body-field svg {
+   cursor: pointer;
+}
+.input-container .body-field.ion-activatable {
+   position: relative;
+   cursor: pointer;
+}
+.amount-input-container {
+   margin-top: 40px;
+}
+.balance-fields-wrapper .qr {
+   width: 160px;
+   height: 160px;
+}
+.qr-label {
+   width: 245px;
+   margin-left: 25px;
+   align-self: center;
+   font-size: 16px;
+   line-height: 24px;
+   opacity: 0.5;
+}
+.input-container .value-field {
+   /* background-image: url(../images/dollar.svg); */
+   background-repeat: no-repeat;
+   background-position: right 12px top 50%, 0 0;
+}
+.withdraw-amount-input-container {
+   height: 50px;
+   margin-top: 5px;
+   padding-left: 15px;
+   align-items: center;
+   border: 1px solid var(--grey);
+   border-radius: 8px;
+}
+.withdraw-amount-input-container .icon-container {
+   width: 22px;
+   min-width: 22px;
+   height: 22px;
+}
+.withdraw-amount-input-container .icon-container img {
+   width: 100%;
+   height: 100%;
+}
+.withdraw-amount-input-container .amount-input {
+   height: 100%;
+   padding-left: 10px;
+   margin: 0;
+   border: none;
+}
+.withdraw-amount-input-container .max-btn {
+   width: auto;
+   height: 100%;
+   padding: 0 24px;
+   align-items: center;
+   background: var(--user-image-bg);
+   border: 1px solid var(--grey);
+   border-radius: 8px;
+   cursor: pointer;
+   position: relative;
+   font-weight: 500;
+}
+.input-container-item .max-btn {
+   width: auto;
+   height: calc(100% - 2px);
+   padding: 0 24px;
+   align-items: center;
+   background: var(--user-image-bg);
+   border: 1px solid var(--grey);
+   border-radius: 8px;
+   cursor: pointer;
+   position: relative;
+   font-weight: 500;
+   position: absolute;
+   right: 1px;
+}
+.input-container-item .max-btn:hover {
+   border: 1px solid var(--green);
+}
+
+/* Custom icon in IonSelect */
+.field.currency::before {
+   content: '';
+   width: 22px;
+   height: 22px;
+   margin-right: 10px;
+   background-size: cover;
+	background-repeat: no-repeat;
+}
+.field.currency.USD::before {
+   background-image: url("../images/crypto-logos/bcoin.svg") !important;
+}
+.field.currency.bitcoin::before,
+.field.currency.BTC::before {
+   background-image: url("../images/crypto-logos/bitcoin.svg") !important;
+}
+.field.currency.litecoin::before,
+.field.currency.LTC::before {
+   background-image: url("../images/crypto-logos/litecoin.svg") !important;
+}
+.field.currency.ethereum::before,
+.field.currency.ETH::before {
+   background-image: url("../images/crypto-logos/ethereum.svg") !important;
+}
+.field.currency.USDT-ERC20::before {
+   background-image: url("../images/crypto-logos/tether-usdt.svg") !important;
+}
+.field.currency.USDC-ERC20::before {
+   background-image: url("../images/crypto-logos/circle-usdc.svg") !important;
+}
+.field.currency.ripple::before,
+.field.currency.XRP::before {
+   background-image: url("../images/crypto-logos/ripple.svg") !important;
+}
+
+.currency-item ion-label {
+   margin-left: 30px !important;
+}
+.currency-item::part(native) {
+	background-position: 10px;
+	background-repeat: no-repeat;
+   background-size: 22px;
+}
+.currency-item.USD::part(native) {
+   background-image: url("../images/crypto-logos/bcoin.svg") !important;
+}
+.currency-item.bitcoin::part(native),
+.currency-item.BTC::part(native) {
+   background-image: url("../images/crypto-logos/bitcoin.svg") !important;
+}
+.currency-item.litecoin::part(native),
+.currency-item.LTC::part(native) {
+   background-image: url("../images/crypto-logos/litecoin.svg") !important;
+}
+.currency-item.ethereum::part(native),
+.currency-item.ETH::part(native) {
+   background-image: url("../images/crypto-logos/ethereum.svg") !important;
+}
+.currency-item.USDT-ERC20::part(native) {
+   background-image: url("../images/crypto-logos/tether-usdt.svg") !important;
+}
+.currency-item.USDC-ERC20::part(native) {
+   background-image: url("../images/crypto-logos/circle-usdc.svg") !important;
+}
+.currency-item.ripple::part(native),
+.currency-item.XRP::part(native) {
+   background-image: url("../images/crypto-logos/ripple.svg") !important;
+}
+
+/*Exchange Money*/
+.balance-fields-deposites-container {
+   margin-bottom: 30px;
+}
+
+.balance-fields-deposites-container .deposites-container {
+   min-width: 350px;
+   margin-right: 55px;
+   margin-bottom: 0;
+}
+
+.balance-fields-deposites-container .text-container {
+   height: auto;
+   margin-top: 42px;
+   padding: 20px;
+   background: var(--deposites-bg);
+   border: 1px dashed #939B9E;
+   border-radius: 5px;
+   font-size: 14px;
+   line-height: 20px;
+}
+
+.rates-container {
+   min-width: 375px;
+   /* max-width: 400px; */
+}
+
+.rates-title {
+   margin-bottom: 5px;
+   font-size: 14px;
+   line-height: 17px;
+   opacity: .5;
+}
+
+.rates-body {
+   width: 100%;
+   padding: 20px;
+   background: var(--deposites-bg);
+   border-radius: 4px;
+}
+
+.rates-body-item {
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.rates-body-item:last-child {
+   margin-bottom: 0;
+}
+
+.rates-body-item img.chip-icon {
+   margin-right: 10px;
+}
+
+.rates-body-item-name {
+   max-width: 200px;
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.rates-body-item-value {
+   margin-left: auto;
+   align-items: center;
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.rates-body-item-value .bc-icon {
+   margin-left: 5px;
+}
+
+.text-container-wrapper .text-container {
+   margin-bottom: 20px;
+   padding: 20px;
+   background: var(--note-container);
+   border: 1px dashed #939B9E;
+   border-radius: 5px;
+   color: #939B9E;
+   font-size: 14px;
+   line-height: 20px;
+}
+
+.deposites-container {
+   width: 100%;
+   max-width: 350px;
+   background: var(--deposites-bg);
+   border-radius: 4px;
+   padding: 18px 24px;
+   margin-bottom: 30px;
+}
+.deposite-line {
+   justify-content: space-between;
+   padding-bottom: 20px;
+   align-items: center;
+}
+.deposite-line-value {
+   align-items: center;
+}
+.deposite-line-value img {
+   width: 24px;
+   margin-left: 5px;
+}
+.deposite-line:last-of-type {
+   padding-bottom: 0;
+}
+.deposite-line div:first-child {
+   font-weight: 500;
+}
+.deposite-line div span {
+   color: var(--green);
+}
+/*Loan request*/
+.loan-request-header {
+   font-size: 24px;
+   line-height: 28px;
+}
+.loan-request-header strong {
+   font-weight: 500;
+   color: var(--orange);
+}
+/*Funds Security*/
+.balance-title {
+   font-size: 24px;
+   font-weight: 500;
+   line-height: 28px;
+   color: var(--grey);
+   margin-bottom: 30px;
+}
+.balance-title.personal-balance-title {
+   margin-bottom: 15px;
+}
+.balance-content {
+   font-size: 14px;
+   line-height: 20px;
+}
+.balance-fund-top {
+   justify-content: space-between;
+}
+.balance-fund-top > div,
+.balance-fund-bottom {
+   width: 100%;
+   max-width: 450px;
+}
+.balance-fund-bottom {
+   margin-top: 72px;
+}
+.balance-cards {
+   align-items: center;
+}
+.balance-cards img:first-child {
+   margin-right: 20px;
+}
+ion-select-popover ion-list ion-item {
+   color: var(--font-default) !important;
+   --background: var(--subscribe-input-bg);
+}
+.sc-ion-select-popover-h ion-list.sc-ion-select-popover,
+ion-select-popover.sc-ion-select-popover-md-h ion-list {
+   background: var(--subscribe-input-bg);
+   border-radius: 8px;
+}
+/* ion-item.ion-activatable:not(.ion-focused):hover::part(native) {
+   color: var(--color-hover);
+} */
+ion-item.ion-activatable:hover::part(native) {
+   color: var(--color-hover);
+}
+ion-item.ion-activatable:not(.ion-item-select):hover::part(native) {
+   --background: var(--select-hover-bg);
+}
+ion-item.ion-activatable:hover ion-radio {
+   --color: var(--green);
+}
+.wrappable {
+  flex-wrap: wrap;
+}
+.wrappable p{
+  margin: 0
+}
+.warning-message.verify-message {
+  width: auto;
+  max-width: 785px;
+  margin-top: 15px;
+  padding-right: 30px;
+  position: relative;
+  top: inherit;
+  left: inherit;
+}
+.warning-message-content {
+  justify-content: space-between;
+  align-items: center;
+}
+.warning-message.verify-message .save-btn {
+  min-width: 150px;
+  margin-right: 0;
+  background: var(--orange);
+}
